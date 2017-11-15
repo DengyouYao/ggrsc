@@ -1,0 +1,211 @@
+.ncc-head-layout {
+  display: block;
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.ncc-head-layout .site-logo {
+  float: left;
+  width: 240px;
+  height: 60px;
+  margin: 20px 0;
+}
+.ncc-head-layout .site-logo a {
+  display: inline-block;
+  width: 212px;
+  height: 60px;
+  text-indent: -999px;
+  background: url(../img/icon/05542902226750749.png);
+}
+
+.ncc-title {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 15px 0;
+  border: solid #F7F7F7;
+  border-width: 1px 0 0;
+  border-bottom: solid 1px #F5F5F5;
+}
+.ncc-title h3 {
+  font: lighter 24px/30px arial,"microsoft yahei";
+  color: #555;
+}
+.ncc-title h5 {
+  font: 12px/20px arial,"microsoft yahei";
+  color: #AAA;
+}
+
+.receipt {
+  width: 1200px;
+  height: 362px;
+  margin: 0 auto;
+  color: #534535;
+  border: dotted 1px #F32613;
+  background: rgba(255, 245, 204, 0.25);
+  padding: 7px 17px;
+}
+.receipt h3 {
+  font: 16px/20px arial,"microsoft yahei";
+  color: #333;
+  vertical-align: middle;
+  letter-spacing: normal;
+  word-spacing: normal;
+  display: inline-block;
+  line-height: 35px;
+}
+.receipt .addr-list ul li {
+  line-height: 20px;
+  display: block;
+  min-height: 20px;
+  padding: 5px 0 6px 0;
+  margin-top: -1px;
+  border-top: dotted 1px #E6E6E6;
+}
+.receipt .addr-list ul li input {
+  margin: 0 5px;
+}
+.receipt .addr-list ul li a {
+  color: red;
+}
+.receipt .addr-list ul .addr-box dl {
+  font-size: 0;
+  line-height: 20px;
+  clear: both;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.receipt .addr-list ul .addr-box dl dt {
+  font-size: 12px;
+  line-height: 30px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-align: right;
+  display: inline-block;
+  width: 15%;
+  padding: 10px 1% 10px 0;
+  margin: 0;
+}
+.receipt .addr-list ul .addr-box dl dt .required {
+  font: 12px/16px Tahoma;
+  color: #F30;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.receipt .addr-list ul .addr-box dl dd {
+  font-size: 12px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  display: inline-block;
+  width: 84%;
+  padding: 10px 0 10px 0;
+}
+.receipt .addr-list ul .addr-box dl dd .text {
+  font: 12px/20px Arial;
+  color: #777;
+  background-color: #FFF;
+  vertical-align: top;
+  display: inline-block;
+  height: 30px;
+  padding: 4px;
+  border: solid 1px #E6E9EE;
+  outline: 0 none;
+}
+.receipt .addr-list ul .addr-box dl dd .w100 {
+  width: 100px !important;
+}
+.receipt .addr-list ul .addr-box dl dd .w500 {
+  width: 500px;
+}
+.receipt .addr-list ul .addr-box dl dd .w200 {
+  width: 200px;
+}
+.receipt .addr-list ul .addr-box dl dd select {
+  margin-right: 5px;
+  display: none;
+  color: #777;
+  background-color: #FFF;
+  height: 30px;
+  vertical-align: middle;
+  padding: 0 4px;
+  border: solid 1px #E6E9EE;
+  text-align: center;
+}
+.receipt .addr-list ul .addr-box dl:hover {
+  background: #f4ebd2;
+}
+.receipt .addr-list .hr16 {
+  margin: 16px 0 !important;
+}
+.receipt .addr-list .hr16 a {
+  font-size: 12px;
+  vertical-align: middle;
+  letter-spacing: normal;
+  word-spacing: normal;
+  display: inline-block;
+  background: #ED5564;
+  height: 28px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.qunren-footer {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 25px;
+  background: #f7f7f7;
+}
+.qunren-footer .back-cart {
+  float: left;
+}
+.qunren-footer .back-cart .back-bth {
+  font-size: 15px;
+  line-height: 40px;
+  color: #555 !important;
+  vertical-align: top;
+  display: inline-block;
+  height: 40px;
+  padding: 0 15px;
+  background-color: #bbb;
+  cursor: pointer;
+}
+.qunren-footer .sum-price {
+  height: 40px;
+  line-height: 40px;
+  float: right;
+}
+.qunren-footer .sum-price .all-count {
+  display: inline-block;
+  text-align: right;
+}
+.qunren-footer .sum-price .all-count em {
+  font-style: normal;
+  font-size: 20px;
+  color: #F32613;
+  margin: 0 4px;
+}
+.qunren-footer .sum-price .submit-bth {
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFF !important;
+  background-color: #AAA;
+  vertical-align: top;
+  display: inline-block;
+  height: 40px;
+  padding: 0 15px;
+  cursor: not-allowed;
+}
+.qunren-footer .sum-price .ok {
+  background-color: #F32613;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=querendingdan.css.map */

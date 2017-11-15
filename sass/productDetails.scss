@@ -1,0 +1,230 @@
+
+.container-zoom{
+	width: 100%;
+	height: 542px;
+	margin-bottom: 50px;
+	// margin: auto;
+	.main{
+		width: 1200px;
+		height: 542px;
+		margin: 0 auto;
+
+		.daohang{
+			height: 40px;
+		}
+		.cloudzoom-blank{
+			height: 502px;
+			width: 1200px;
+			
+			 
+			border:solid 1px #EEE;
+			.pictures{
+				float: left;
+				width: 380px;
+				height: 500px;
+				
+				margin-right:16px;
+				padding-top: 20px;
+				padding-left: 17px;
+				overflow: hidden;
+				.mid-img-zoom{
+					width: 360px;
+					height:360px;
+					position: relative;
+					.zoom{
+					// display: none;
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+					.pic-show{
+						z-index: 10;
+						// display: inline-block;
+					}
+				}
+				
+				.pictures-list{
+					margin-top: 25px;
+					// ul{
+					// 	width: 360px;
+					// 	display: flex;
+					// 	justify-content:space-between;
+					a{
+						display: inline-block;
+						width: 64px;
+						height: 64px;
+						float: left;
+						position: relative;
+						img{
+							width: 60px;
+							height: 60px;
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							left: 0;
+							right: 0;
+							margin: auto auto;
+						}
+						// margin-left: 5px;
+					}
+					.border-show{
+						border:2px solid red;
+					}
+					//}
+				}
+			}
+			.middle-xiangqing{
+				width: 591px;
+				height: 500px;
+				float: left;
+				border-right:solid 1px #EEE; 
+				border-left:solid 1px #EEE;
+				.name{
+					padding: 15px 20px;
+					h3{
+						font:700 16px/21px "Microsoft Yahei ";
+						color: #333;						
+					}
+					p{
+						font-size: 12px;
+						line-height: 17px;
+						margin-top: 5px;
+						color: #777;
+					}
+				}
+				.prices-list{
+					width: 100%;
+					height: 138px;
+					background: #f5f5f5 url(../img/products/goods_meta_bg.png) no-repeat 0 50%;
+					background-size: cover;
+					position: relative;
+					padding: 15px 20px;
+					color: #fff;
+					font-size: 12px;
+					li{
+						line-height: 36px;
+						&:nth-child(1) span{
+							font-weight: 800;
+							text-decoration: line-through;
+							font-size: 13px;
+						}
+						&:nth-child(2) span{
+							font: 700 30px/25px Tahoma;
+							vertical-align: middle;
+							text-shadow:0 1px 0 #6C0900;
+						}
+						&:nth-child(3){
+							span{
+								vertical-align: middle;
+								img{
+									display: inline-block;
+								}	
+							}							
+							a{
+								text-decoration: underline;
+								color: #fff;
+								margin-left: 15px;
+							}
+						}
+					}
+					.erweima{
+						position: absolute;
+						right: 10px;
+						top: 10px;
+					}
+				} 
+				.buy{
+					clear: both;
+					padding: 20px 0 20px 30px;
+					position: relative;
+					.input{
+						vertical-align: top;
+						display: inline-block;
+						width: 65px;
+						position: relative;
+						input{
+							color: #333;
+							font-size: 16px;
+							font-weight: 600;
+							line-height: 41px;
+							height: 41px;
+							width: 41px;
+							border:solid 1px #eee;
+							text-align: center;
+						}
+						a{
+							background:url(../img/products/2014_ncs_public_img.png) no-repeat;
+							display: block;
+							width: 20px;
+							height: 21px;
+							border-style: solid;
+							border-color: #eee;
+							border-width: 1px 1px 1px 0;
+							position: absolute;
+							left: 42px;
+						}
+						.increase{
+							background-position: -100px -100px;
+							top:0;
+						}
+						.decrease{
+							background-position: -120px -100px;
+							top:20px;
+						}
+						
+					}
+					.btn{
+						display: inline-block;
+						vertical-align: top;
+						height: 42px;
+						position: relative;
+						.addcart{
+							display: inline-block;
+							font: 700 16px/32px "Microsoft Yahei ";
+							color: #fff;
+							text-align: center;
+							height: 42px;
+							line-height: 42px;
+							padding: 0px 12px;
+							margin-right: 5px;
+							border-radius: 2px;
+							position: relative;
+							overflow: hidden;
+							background: #f32613;
+							i{
+								display: inline-block;
+								font-size: 17px;
+								margin-right: 6px;
+								width: 20px;
+								height: 19px;
+								vertical-align: middle;
+								background:  url(../img/products/tollsbor_new.png) no-repeat;
+								background-position: -10px -79px;
+
+							}
+						}
+						.buynow{
+							font: 700 16px/32px "Microsoft Yahei ";
+						    color: #FFF;
+						    text-align: center;
+						    display: inline-block;
+						    height: 32px;
+						    height: 42px;
+							line-height: 42px;
+						    padding: 0px 12px;
+						    margin-right: 5px;
+						    border-radius: 2px;
+						    position: relative;
+						    overflow: hidden;
+						    background: #BA7538;
+						}
+					}
+				}
+			}
+			.bussess-xinxi{
+				width:210px;
+				float: left
+			}
+		}
+	}
+}

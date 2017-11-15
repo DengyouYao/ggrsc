@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>产品列表</title>
+	<link rel="icon" href="img/icon/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="../img/icon/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/productsList.css">
+</head>
+<body>
+	<div class="header"></div>
+	<div class="search"></div>
+	<div class="nav"></div>	
+	
+	<div class="container">
+		<div class="main">
+			<div class="left">
+				<div class="name">
+					<p>首页</p>
+				</div>
+				<div class="title-check">
+					
+				</div>
+				<div class="products-list-show">
+					<ul class="list-pic">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="link"></div>
+	<div class="footer"></div>
+	<!-- 产品信息显示模板 -->
+	<script type="text/html" id="container_products">
+		{{each products as prod i}}
+			<li class="item">
+				<div style="display: none;" class="id">{{prod.id}}</div>
+				<div class="goods-content">
+					<div class="goods-pic">
+						<a href="productDetails.html" target="_blank" title="{{prod.title}}">
+							<img src="{{prod.src}}" alt="" title="{{prod.title}}" alt="{{prod.title}}" style="display: inline-block;">
+						</a>
+					</div>
+					<div class="goods-info">
+						<div class="goods-pic-small">
+							<ul>
+								<li class="selected"><a href="javascript:void(0);"><img src="{{prod.src1}}" alt="" style="display: inline-block;"></a></li>
+								<li><a href="javascript:void(0);"><img src="{{prod.src2}}" alt="" style="display: inline-block;"></a></li>
+								<li><a href="javascript:void(0);"><img src="{{prod.src3}}" alt="" style="display: inline-block;"></a></li>
+								<li><a href="javascript:void(0);"><img src="{{prod.src4}}" alt="" style="display: inline-block;"></a></li>
+								<li><a href="javascript:void(0);"><img src="{{prod.src5}}" alt="" style="display: inline-block;"></a></li>
+							</ul>
+						</div>
+						<div class="goods-name">
+							<a href="javascript:void(0);">{{prod.title}}<em>{{prod.tishi}}</em></a>
+						</div>
+						<div class="goods-price">
+							<em class="sale-price" title="商城价：￥{{prod.newprice}}">￥<i>{{prod.newprice}}</i></em>
+							<em class="mark-price" title="市场价：￥{{prod.oldprice}}">￥<i>{{prod.oldprice}}</i></em>
+						</div>
+						<div class="else-xinxi">
+							
+						</div>
+						<div class="store">
+							<div class="na">
+								<a href="javascript:void(0);">天才购物</a>
+							</div>
+							<div class="add-cart">
+								<a href="javascript:void(0);"><i></i>加入购物车</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		{{/each}}
+	</script>
+
+
+	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="../lib/jquery_plugins/jquery.timers-1.2.js"></script>
+	<script src="../lib/jquery_plugins/jquery.cookie.js"></script>
+	<script src="../lib/arttemplate/template.js"></script>
+	<script src="../js/productsList.js"></script>
+
+</body>
+</html>

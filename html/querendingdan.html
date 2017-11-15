@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>确认订单</title>
+	<link rel="icon" href="img/icon/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="../img/icon/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/querendingdan.css">
+</head>
+<body>
+	<div class="header"></div>
+	<header id="header" class="ncc-head-layout">
+		<div class="site-logo">
+			<h1><a href="../index.html">福昂高</a></h1>
+		</div>
+		<ul class="ncc-flow">
+			<li></li>
+		</ul>
+	</header><!-- /header -->
+	<div class="ncc-title">
+		<h3>确认订单</h3>
+		<h5>请仔细核对填写收获，发票等信息，以确保物流快递及时准确投递</h5>
+	</div>
+	<div class="receipt">
+		<h3>收货人信息</h3>
+		<div class="addr-list">
+			<ul>
+				<li class="addr-item">
+					<input type="radio" name="" checked="checked">
+					<label for="add-addr">使用新地址</label>&nbsp;
+					<label><a href="javascript:void(0);" class="del">管理自提服务点</a></label>					
+				</li>
+				<div class="addr-box">
+					<dl>
+						<dt><i class="required">*</i>收货人姓名：</dt>
+						<dd><input type="text" name="" maxlength="20" class="text w100 name"></dd>
+					</dl>
+					<dl>
+						<dt><i class="required">*</i>所在地区：</dt>
+						<dd><div>
+							<select name="" class="valid " id="province" style="display: inline-block;">
+								<option value="">-请选择-</option>								
+							</select>
+							<select name="" class="valid" id="city">
+								<option value="">-请选择-</option>								
+							</select>
+							<select name="" class="valid" id="district">
+								<option value="">-请选择-</option>								
+							</select>
+							<select name="" class="valid" id="cun">
+								<option value="">-请选择-</option>								
+							</select>
+						</div></dd>
+					</dl>
+					<dl>
+						<dt><i class="required">*</i>详细地址：</dt>
+						<dd><input type="text" name="" maxlength="80" class="text addr w500">
+							<p class="hint">请填写详细地址，不需要重复填写所在地区</p></dd>
+					</dl>
+					<dl>
+						<dt><i class="required">*</i>手机号码：</dt>
+						<dd><input type="text" name="" maxlength="20" class="text phone w200
+							">&nbsp;&nbsp;(或)&nbsp;固定电话：<input type="text" name="" maxlength="20" class="text tel w200
+							"></dd>
+					</dl>
+				</div>
+			</ul>
+			<div class="hr16"><a href="javascript:void(0);" class="ncbtn">保存收货人信息</a></div>
+		</div>
+	</div>
+	<div class="qunren-footer">
+		<div class="back-cart">
+			<a href="cart.html" class="back-bth"><返回购物车</a>
+		</div>
+		<div class="sum-price">
+			<div class="all-count">订单总金额：<em id="cartTotal">.....</em>元</div>
+			<a href="javascript:void(0);" class="submit-bth">确认订单</a>
+		</div>	
+	</div>
+	
+	<div class="link"></div>
+	<div class="footer"></div>
+
+	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="../lib/jquery_plugins/jquery.timers-1.2.js"></script>
+	<script src="../lib/jquery_plugins/jquery.cookie.js"></script>
+	<script src="../lib/arttemplate/template.js"></script>
+	<script src="../js/querendingdan.js"></script>
+	
+</body>
+</html>

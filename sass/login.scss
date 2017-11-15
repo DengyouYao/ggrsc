@@ -1,0 +1,306 @@
+
+$width:1003px;
+$f-color:#999999;
+
+.login-header{
+    width: 100%;
+    height: 88px;
+    .main{
+        width: $width;
+        height: 88px;
+        margin: 0 auto;
+        h2{
+            margin-top: 20px;
+            float: left;
+            a{
+                display: inline-block;
+                text-indent: -9999px;
+                width: 212px;
+                height: 60px;
+                background: url(../img/icon/05542902226750749.png);
+            }    
+        }
+        dl{
+            float: right;
+            width: 313px;
+            height: 40px;
+            font-size: 13px;
+            color: $f-color;
+            margin-top: 34px;
+            dt {
+                float: left;
+                margin-right: 10px;
+                img{                    
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                }
+            }
+            dd{
+                line-height: 20px;
+                a{
+                    font-size: 14px;
+                    margin-left: 5px;
+                    color: #0079dd;
+                    font-weight: 900;
+                }
+            }
+            
+            
+        }
+        
+    }
+}
+.login-container{
+    width: 100%;
+    height: 536px;
+    border-bottom: 1px solid #999999;
+    background: url(../img/banner_background.jpg);
+    .main{
+        width: $width;
+        height: 535px;
+        margin: 0 auto;
+        overflow: hidden;
+        .left{
+            float: left;
+            width: 400px;
+            height: 340px;
+            margin-top: 60px;
+            img{
+                
+                width: 95%;
+                height: 95%;
+                vertical-align: middle;
+            }
+        }
+        .right{
+            width: 480px;
+            margin-top: 26px;
+            float: right;
+            position: relative;
+            background: white;
+            padding: 0 17px;
+            border-radius: 8px;
+            .icon{
+                width: 18px;
+                height: 8px;
+                top: -8px;
+                left: 160px;
+                position: absolute;
+                background: url(../img/icon/icon1.png) no-repeat;
+            }
+            .title{
+                height: 60px;
+                font-size: 18px;
+                color: #999999;
+                border-bottom: 1px solid $f-color;
+                span{
+                    display: inline-block;
+                    width: 220px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    cursor: pointer;
+                    position: relative;
+                    &:hover{
+                        color: black;
+                    }
+                    &:nth-child(1){
+                        color: red;
+                        border-bottom: 3px solid #D02629;
+                        i{
+                            width: 14px;
+                            height: 7px;
+                            bottom: -10px;
+                            left: 106px;
+                            position: absolute;
+                            background: url(../img/icon/icon2.png) no-repeat; 
+                        }
+                    }
+                    
+                }
+            }
+            .middle{
+                padding-left: 40px;
+                .user{
+                    font-size: 14px;
+                    div{
+                        width: 350px;
+                        height: 52px;
+                        line-height: 52px;
+                        margin-top: 30px;
+                        border: 1px solid #CCCCCC;
+                        span{
+                            display: inline-block;
+                            float: left;
+                            width: 72px;
+                            height: 50px;
+                            text-align: right;
+                        }
+                        input{
+                            float: left;
+                            border: none;
+                            height: 50px;
+                            width: 276px;
+                            outline: none;
+                        }
+                        &:nth-child(2){
+                            margin-top: -1px;
+                        }
+                        &:nth-child(3){
+                            border: none;
+//                          height: 52px;
+                            .in{
+                                margin-top: 0px;
+                                width: 224px;
+                                float: left;
+                               input{
+                                    width:150px
+                                } 
+                            }
+                            .out{
+                                border: none;
+                                margin-top: 0px;
+                                float: left;
+                                width: 124px;
+                                height: 52px;
+                                position: relative;
+                                i{
+                                    display: block;                                
+                                    width: 124px;
+                                    height: 52px;  
+                                    float: left;                                  
+                                    img{
+                                       width: 124px;
+                                       height: 52px;  
+                                    }                                                                     
+                                }
+                                .makecode{
+                                    position: absolute;
+                                    display: none;
+                                    width: 124px;
+                                    height: 52px;
+                                    background: black;
+                                    opacity: 0.3;
+                                    text-align: center;
+                                    line-height: 52px;
+                                    color: white;
+                                    top: 0px;
+                                    left: 0px;
+                                }
+                                &:hover {
+                                    cursor: pointer;
+                                    .makecode{
+                                        display: block;
+                                    } 
+                                } 
+                            }
+                            
+                        }
+                    }
+                    .check{
+                        margin-top: 0;
+                        border: none;
+                        position: relative;
+                        padding-left:16px;
+                        color: $f-color;
+                        input{
+                            width: 15px;
+                            height: 15px;
+                            position: absolute;
+                            top: 20px;
+                            left: 0px;
+                        }
+                        a{
+                            float: right;
+                            color: blue;
+                        }
+                    }
+                    .btnlogin{
+                        width: 350px;
+                        height: 45px;
+                        border: none;
+                        font-size: 15px;
+                        text-align: center;
+                        letter-spacing: 10px;
+                        line-height: 45px;
+                        color: white;
+                        font-weight: 600;
+                        border-radius: 5px;
+                        background: #f32613;
+                    }
+                }
+                
+            }
+            .else{
+                margin-top: 24px;
+                margin-left: 55px;
+                height: 90px;
+                h4{
+                    font-size: 13px;
+                }
+                p{
+                    height: 32px;
+                    font-size: 12px;
+                    margin-top: 10px;
+                    a{
+                        display: inline-block;
+                        height: 32px;
+                        position: relative;
+                        margin-right: 25px;
+                        
+                        color: $f-color;                       
+                        i{
+                            display: inline-block;
+                            float: left;                            
+                            width: 32px;
+                            height: 32px;
+                            line-height: 32px;
+                        }
+                        span{
+                            display: inline-block;
+                            float: left;
+                            height: 32px;
+                            line-height: 32px;
+                            margin-left: 10px;
+                        }
+                        &:nth-child(1) i{
+                            background: url(../img/icon/login_pic.png);
+                            background-position: 0px 0px;
+                        }
+                        &:nth-child(2) i{
+                            background: url(../img/icon/login_pic.png);
+                            background-position: -32px 0px;
+                        }
+                        &:nth-child(3) i{
+                            background: url(../img/icon/login_pic.png);
+                            background-position: -64px 0px;
+                        }
+                        &:hover{
+                            &:nth-child(1){
+                                color: #3eb6e8;
+                                i{
+                                    background-position: -96px 0px;
+                                }
+                            }
+                            &:nth-child(2){
+                                color: #f77361;
+                                i{
+                                    background-position: -128px 0px;
+                                }
+                            }
+                            &:nth-child(3){
+                                color: #4ea335;
+                                i{
+                                    background-position: -160px 0px;
+                                }
+                            }
+                        }
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,3321 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>精工不锈钢平面字</title>
+<meta name="keywords" content="精工不锈钢平面字,不锈钢字,门头广告字,金属广告字,广告字制作" />
+<meta name="description" content="广告人商城以精工不锈钢平面字,广告材料,设备,制作为主题的互联网及移动互联网的交易平台 ，产品涉及广告字制作,广告金属字,发光字厂家,广告发光字,制作发光字,不锈钢广告字等，50多个小类，5千多种产品，其规模,品类均具行业领先地位。" />
+<meta name="author" content="GGRSC">
+<meta name="copyright" content="ggrsc.com Inc. All Rights Reserved">
+<meta name="renderer" content="webkit">
+<meta name="renderer" content="ie-stand">
+<style type="text/css">
+body { _behavior: url(http://www.ggrsc.com/templates/default/css/csshover.htc);
+}
+</style>
+<link rel="shortcut icon" href="http://www.ggrsc.com/favicon.ico" />
+<link href="http://www.ggrsc.com/templates/default/css/base.css" rel="stylesheet" type="text/css">
+<link href="http://www.ggrsc.com/templates/default/css/home_header.css" rel="stylesheet" type="text/css">
+<link href="http://www.ggrsc.com/resource/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<!--[if IE 7]>
+  <link rel="stylesheet" href="http://www.ggrsc.com/resource/font/font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="http://www.ggrsc.com/data/resource/js/html5shiv.js"></script>
+      <script src="http://www.ggrsc.com/data/resource/js/respond.min.js"></script>
+<![endif]-->
+<script>
+var COOKIE_PRE = '44DE_';var _CHARSET = 'utf-8';var LOGIN_SITE_URL = 'http://www.ggrsc.com/member';var MEMBER_SITE_URL = 'http://www.ggrsc.com/member';var SITEURL = 'http://www.ggrsc.com';var SHOP_SITE_URL = 'http://www.ggrsc.com';var RESOURCE_SITE_URL = 'http://www.ggrsc.com/data/resource';var RESOURCE_SITE_URL = 'http://www.ggrsc.com/data/resource';var SHOP_TEMPLATES_URL = 'http://www.ggrsc.com/templates/default';
+</script>
+<script src="http://www.ggrsc.com/data/resource/js/jquery.js"></script>
+<script src="http://www.ggrsc.com/data/resource/js/common.js" charset="utf-8"></script>
+<script src="http://www.ggrsc.com/data/resource/js/jquery-ui/jquery.ui.js"></script>
+<script src="http://www.ggrsc.com/data/resource/js/jquery.validation.min.js"></script>
+<script src="http://www.ggrsc.com/data/resource/js/dialog/dialog.js" id="dialog_js" charset="utf-8"></script>
+<script type="text/javascript">
+var PRICE_FORMAT = '&yen;%s';
+$(function(){
+	//首页左侧分类菜单
+	$(".category ul.menu").find("li").each(
+		function() {
+			$(this).hover(
+				function() {
+				    var cat_id = $(this).attr("cat_id");
+					var menu = $(this).find("div[cat_menu_id='"+cat_id+"']");
+					menu.show();
+					$(this).addClass("hover");					
+					var menu_height = menu.height();
+					if (menu_height < 60) menu.height(80);
+					menu_height = menu.height();
+					var li_top = $(this).position().top;
+					//alert(li_top);
+					if(li_top==434||li_top==370){$(menu).css("top",-li_top + 126);}
+					else {$(menu).css("top",-li_top + 49);}
+					
+				},
+				function() {
+					$(this).removeClass("hover");
+				    var cat_id = $(this).attr("cat_id");
+					$(this).find("div[cat_menu_id='"+cat_id+"']").hide();
+				}
+			);
+		}
+	);
+	$(".head-user-menu dl").hover(function() {
+		$(this).addClass("hover");
+	},
+	function() {
+		$(this).removeClass("hover");
+	});
+	$('.head-user-menu .my-cart').mouseover(function(){// 运行加载购物车
+		load_cart_information();
+		$(this).unbind('mouseover');
+	});
+    
+	$('#button').click(function(){
+	    if ($('#keyword').val() == '') {
+		    if ($('#keyword').attr('data-value') == '') {
+			    return false
+			} else {
+				window.location.href="http://www.ggrsc.com/index.php?act=search&op=index&keyword="+$('#keyword').attr('data-value');
+			    return false;
+			}
+	    }
+	});
+	$(".head-search-bar").hover(null,
+	function() {
+		$('#search-tip').hide();
+	});
+	// input ajax tips
+	$('#keyword').focus(function(){
+		if($('#search_act').val()=='search') {
+			$('#search-tip').show();
+		} else {
+			$('#search-tip').hide();
+		}
+		}).autocomplete({
+		//minLength:0,
+        source: function (request, response) {
+            $.getJSON('http://www.ggrsc.com/index.php?act=search&op=auto_complete', request, function (data, status, xhr) {
+                $('#top_search_box > ul').unwrap();
+                response(data);
+                if (status == 'success') {
+                    $('#search-tip').hide();
+                    $(".head-search-bar").unbind('mouseover');
+                    $('body > ul:last').wrap("<div id='top_search_box'></div>").css({'zIndex':'1000','width':'362px'});
+                }
+            });
+       },
+		select: function(ev,ui) {
+			$('#keyword').val(ui.item.label);
+			$('#top_search_form').submit();
+		}
+	});
+	$('#search-his-del').on('click',function(){$.cookie('44DE_his_sh',null,{path:'/'});$('#search-his-list').empty();});
+});
+</script>
+</head>
+<body>
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div id="vToolbar" class="nc-appbar">
+  <div class="nc-appbar-tabs" id="appBarTabs">
+  	
+  	
+  	
+ 		<div class="user-kefu ta_delay" onclick="window.open('http://q.url.cn/s/nVC3yrm?_type=wpa')">
+ 			   <img src="http://www.ggrsc.com/templates/default/images/kefu.png"/>
+               <p>在线客服</p>
+      	 
+    </div>
+   
+    
+        <div class="user ta_delay" nctype="a-barLoginBox">
+      <div class="avatar"><img src="http://img.ggrsc.com/common/default_user_portrait.gif"/></div>
+      <p>未登录</p>
+    </div>
+    <div class="user-login-box" nctype="barLoginBox" style="display:none;"> <i class="arrow"></i> <a href="javascript:void(0);" class="close-a" nctype="close-barLoginBox" title="关闭">X</a>
+      
+      <div class="utitle">会员登录</div>
+      
+      <form id="login_form" method="post" action="http://www.ggrsc.com/member/index.php?act=login&op=login" onsubmit="ajaxpost('login_form', '', '', 'onerror')">
+        <input type='hidden' name='formhash' value='IcQ-GFfuvxbqiTFbNG8Xg6GKMU_IhXD' />        <input type="hidden" name="form_submit" value="ok" />
+        <input name="nchash" type="hidden" value="baf2c084" />
+        <dl>
+          
+          <dd>
+          	<div style="width: 30px;height: 30px;float: left;border: 1px solid #DDDDDD;text-align: center;">
+          		<img src="http://www.ggrsc.com/templates/default/images/data.png" class="input-icon"/>
+          	</div>
+          	
+            <input type="text" class="text" tabindex="1" autocomplete="off"  name="user_name" autofocus >
+            <label></label>
+          </dd>
+        </dl>
+        <dl>
+          <dt></dt>
+          <dd>
+          	<div style="width: 30px;height: 30px;float: left;border: 1px solid #DDDDDD;text-align: center;">
+          		<img src="http://www.ggrsc.com/templates/default/images/mima.png"/ class="input-icon">
+          	</div>
+          	
+            <input tabindex="2" type="password" class="text" name="password" autocomplete="off">
+            <label></label>
+          </dd>
+        </dl>
+                <dl>
+          <dt></dt>
+          <dd>
+          	<div style="width: 30px;height: 30px;float: left;border: 1px solid #DDDDDD;text-align: center;">
+          		<img src="http://www.ggrsc.com/templates/default/images/yanzhengma.png" class="input-icon"/>
+          	</div>
+          	
+            <input tabindex="3" type="text" name="captcha" autocomplete="off" class="text w130" id="captcha2" maxlength="4" size="10" />
+            
+            <a href="javascript:void(0)" class="ml5" onclick="javascript:document.getElementById('codeimage').src='http://www.ggrsc.com/index.php?act=seccode&op=makecode&nchash=baf2c084&t=' + Math.random();"><img src="" name="codeimage" border="0" id="codeimage" class="vt"></a>
+           
+           
+            <div class="m-w">
+           	     <a href="http://www.ggrsc.com/member/index.php?act=login&op=register&" target="_blank">没有账号？</a>
+           </div>
+           <div style="width: 120px;height:20px;float: left;"></div>
+            <div class="m-w">
+           	    <a href="http://www.ggrsc.com/member/index.php?act=login&op=forget_password" target="_blank">忘记密码？</a>
+           </div>
+            <label></label>
+          </dd>
+        </dl>
+                    <div class="bottom">
+              <input type="submit" class="submit" value="确认">
+              <input type="hidden" value="" name="ref_url">
+              
+                            <h4></h4>
+                            <a href="javascript:void(0);" onclick="ajax_form('weixin_form', '微信账号登录', 'http://www.ggrsc.com/member/index.php?act=connect_wx&op=index', 360);" title="微信账号登录" class="mr20"><img src="http://www.ggrsc.com/templates/default/images/wechat.png"/></a>
+                                          <a href="http://www.ggrsc.com/member/index.php?act=connect_sina" title="新浪微博账号登录" class="mr20"><img src="http://www.ggrsc.com/templates/default/images/weibo.png"/></a>
+                                          <a href="http://www.ggrsc.com/member/index.php?act=connect_qq" title="QQ账号登录" class="mr20"><img src="http://www.ggrsc.com/templates/default/images/qq.png"/></a>
+                                      </div>
+      </form>
+    </div>
+        <ul class="tools">
+                <li><a href="javascript:void(0);" id="rtoolbar_cart" class="cart ta_delay"><div class="tools_img"></div><span>购物车</span><i id="rtoobar_cart_count" class="new_msg" style="display:none;"></i></a></li>
+                  <li><a href="javascript:void(0);" id="compare" class="compare ta_delay"><div class="tools_img"></div><span>对比</span></a></li>
+            <li><a href="javascript:void(0);" id="gotop" class="gotop ta_delay"><div class="tools_img"></div><span>顶部</span></a></li>
+    </ul>
+    <div class="content-box" id="content-compare">
+      <div class="top">
+        <h3>商品对比</h3>
+        <a href="javascript:void(0);" class="close" title="隐藏"></a></div>
+      <div id="comparelist"></div>
+    </div>
+    <div class="content-box" id="content-cart">
+      <div class="top">
+        <h3>我的购物车</h3>
+        <a href="javascript:void(0);" class="close" title="隐藏"></a></div>
+      <div id="rtoolbar_cartlist"></div>
+    </div>
+    <a id="activator" href="javascript:void(0);" class="nc-appbar-hide"></a> </div>
+  <div class="nc-hidebar" id="ncHideBar">
+    <div class="nc-hidebar-bg">
+            <div class="user-avatar"><img src="http://img.ggrsc.com/common/default_user_portrait.gif"/></div>
+            <div class="frame"></div>
+      <div class="show"></div>
+  </div>
+</div>
+</div>
+<div class="public-top-layout wrapper">
+  <div class="topbar">
+    <div class="service fl">
+      <div class="tel">服务热线：<b>400-6878-909</b></div>
+      <div class="m-mx"> <span><i></i><a href="http://m.ggrsc.com">手机逛商城</a></span>
+        <div>
+                    <dl class="down_app">
+            <dd>
+              <div class="qrcode"><img src="http://img.ggrsc.com/common/mb_app.png"></div>
+              <div class="hint">
+                <h4>扫描二维码</h4>
+                下载手机客户端</div>
+              <div class="addurl">
+                                <a href="http://shouji.baidu.com/software/10718641.html" target="_blank"><i class="icon-android"></i>Android</a>
+                                                <a href="https://itunes.apple.com/us/app/guang-gao-ren-shang-cheng/id1041873257?mt=8" target="_blank"><i class="icon-apple"></i>iPhone</a>
+                              </div>
+            </dd>
+          </dl>
+                  </div>
+      </div>
+    </div>
+    <div class="quick-menu">
+      <dl>
+        <dt>客户服务<i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="http://www.ggrsc.com/member/article_cate-2.html">帮助中心</a></li>
+            <li><a href="http://www.ggrsc.com/member/article_cate-5.html">售后服务</a></li>
+            <li><a href="http://www.ggrsc.com/member/article_cate-6.html">客服中心</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt><a href="http://www.ggrsc.com/show_joinin.html" title="商家管理">商家管理</a><i></i></dt>
+        <dd>
+          <ul>
+		    <li><a href="http://www.ggrsc.com/show_joinin.html" title="招商入驻">招商入驻</a></li>
+            <li><a href="http://www.ggrsc.com/seller_login.html" target="_blank" title="登录商家管理中心">商家登录</a></li>
+          </ul>
+            </dl>
+            <dl>
+        <dt>站点导航<i></i></dt>
+        <dd>
+          <ul>
+                        <li><a
+         target="_blank" href="/category.html">商品分类</a></li>
+                        <li><a
+         target="_blank" href="http://www.ggrsc.com/member/article_cate-4.html">支付方式</a></li>
+                      </ul>
+        </dd>
+      </dl>
+          </div>
+    <div class="head-user-mall">
+    <dl class="my-mall">
+        <dt><span class="ico"></span>我的商城<i class="arrow"></i></dt>
+        <dd>
+          <div class="sub-title">
+            <h4>                          </h4>
+            <a href="http://www.ggrsc.com/index.php?act=member&op=home" class="arrow">我的用户中心<i></i></a></div>
+          <div class="user-centent-menu">
+            <ul>
+              <li><a href="http://www.ggrsc.com/member/index.php?act=member_message&op=message">站内消息(<span>0</span>)</a></li>
+              <li><a href="http://www.ggrsc.com/index.php?act=member_order" class="arrow">我的订单<i></i></a></li>
+              <li><a href="http://www.ggrsc.com/index.php?act=member_consult&op=my_consult">咨询回复(<span id="member_consult">0</span>)</a></li>
+              <li><a href="http://www.ggrsc.com/index.php?act=member_favorite_goods&op=fglist" class="arrow">我的收藏<i></i></a></li>
+                                          <li><a href="http://www.ggrsc.com/member/index.php?act=member_points" class="arrow">我的积分<i></i></a></li>
+                          </ul>
+          </div>
+          <div class="browse-history">
+            <div class="part-title">
+              <h4>最近浏览的商品</h4>
+              <span style="float:right;"><a href="http://www.ggrsc.com/index.php?act=member_goodsbrowse&op=list">全部浏览历史</a></span> </div>
+            <ul>
+              <li class="no-goods"><img class="loading" src="http://www.ggrsc.com/templates/default/images/loading.gif" /></li>
+            </ul>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div class="user-entry">
+      您好,       <span class="wr"><a class="login" href="http://www.ggrsc.com/member/index.php?act=login&op=index">请登录</a> <a href="http://www.ggrsc.com/member/index.php?act=login&op=register">注册</a></span>
+            <!--<span><a href="http://www.ggrsc.com/index.php?act=invite">邀请返利</a></span>-->
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">	
+//登录开关
+var connect_qq = "1";
+var connect_sn = "1";
+var connect_wx = "1";
+var connect_weixin_appid = "wx328f59e0309daf02";
+
+$(function() {
+	$('#gotop').click(function(){
+	        $('html, body').animate({
+	            scrollTop: 0
+	        }, 500);
+	});
+	//顶部banner
+	var haokey = getCookie('haokey');
+		if(haokey){
+		$("#top-banner").hide();
+		} else {
+			$("#top-banner").slideDown(800);
+			}
+		$("#top-banner .close").click(function(){
+			setCookie('haokey','yes',1);
+			$("#top-banner").hide();
+	});
+	//我的商城
+		$(".head-user-mall dl").hover(function() {
+			$(this).addClass("hover");
+		},
+		function() {
+			$(this).removeClass("hover");
+		});
+		$('.head-user-mall .my-mall').mouseover(function(){// 最近浏览的商品
+			load_history_information();
+			$(this).unbind('mouseover');
+		});
+	
+		$('#activator').click(function() {
+			$('#content-cart').animate({'right': '-250px'});
+			$('#content-compare').animate({'right': '-250px'});
+			$('#vToolbar').animate({'right': '-60px'}, 300,
+			function() {
+				$('#ncHideBar').animate({'right': '59px'},	300);
+			});
+	        $('div[nctype^="bar"]').hide();
+		});
+		$('#ncHideBar').click(function() {
+			$('#ncHideBar').animate({
+				'right': '-86px'
+			},
+			300,
+			function() {
+				$('#content-cart').animate({'right': '-250px'});
+				$('#content-compare').animate({'right': '-250px'});
+				$('#vToolbar').animate({'right': '0'},300);
+			});
+		});
+    $("#compare").click(function(){
+    	if ($("#content-compare").css('right') == '-250px') {
+ 		   loadCompare(false);
+ 		   $('#content-cart').animate({'right': '-250px'});
+  		   $("#content-compare").animate({right:'36px'});
+    	} else {
+    		$(".close").click();
+    		$(".chat-list").css("display",'none');
+        }
+	});
+    $("#rtoolbar_cart").click(function(){
+        if ($("#content-cart").css('right') == '-250px') {
+         	$('#content-compare').animate({'right': '-250px'});
+    		$("#content-cart").animate({right:'36px'});
+    		if (!$("#rtoolbar_cartlist").html()) {
+    			$("#rtoolbar_cartlist").load('http://www.ggrsc.com/index.php?act=cart&op=ajax_load&type=html');
+    		}
+        } else {
+        	$(".close").click();
+        	$(".chat-list").css("display",'none');
+        }
+	});
+	$(".close").click(function(){
+		$(".content-box").animate({right:'-250px'});
+      });
+
+	$(".quick-menu dl").hover(function() {
+		$(this).addClass("hover");
+	},
+	function() {
+		$(this).removeClass("hover");
+	});
+
+    // 右侧bar用户信息
+    $('div[nctype="a-barUserInfo"]').click(function(){
+        $('div[nctype="barUserInfo"]').toggle();
+    });
+    // 右侧bar登录
+    $('div[nctype="a-barLoginBox"]').click(function(){
+        $('div[nctype="barLoginBox"]').toggle();
+        document.getElementById('codeimage').src='http://www.ggrsc.com/index.php?act=seccode&op=makecode&nchash=baf2c084&t=' + Math.random();
+    });
+    $('a[nctype="close-barLoginBox"]').click(function(){
+        $('div[nctype="barLoginBox"]').toggle();
+    });
+        });
+</script><div class="wrapper"><div class="mt10"></div></div>
+<div class="header-wrap wrapper">
+  <header class="public-head-layout">
+    <h1 class="site-logo"><a href="http://www.ggrsc.com"><img src="http://img.ggrsc.com/common/05542902226750749.png" class="pngFix"></a></h1>
+    <!--<div class="logo-banner"><a href='' title='顶部logo边广告'><img style='width:231px;height:70px' border='0' src='http://img.ggrsc.com/adv/05330592012761742.png' alt=''/></a></div>-->
+   
+    <div class="head-search-layout">
+      <div class="head-search-bar" id="head-search-bar">
+     <div id="search">
+          <ul class="tab">
+            <li act="search" class="current"><span>商品</span><i class="arrow"></i></li>
+            <li act="store_list"><span>店铺</span></li>
+          </ul>
+        </div>
+
+        <form action="http://www.ggrsc.com" method="get" class="search-form" id="top_search_form">
+          <input name="act" id="search_act" value="search" type="hidden">
+                    <input name="keyword" id="keyword" type="text" class="input-text" value="" maxlength="60" x-webkit-speech lang="zh-CN" onwebkitspeechchange="foo()" placeholder="免费名片" data-value="%E5%90%8D%E7%89%87" x-webkit-grammar="builtin:search" autocomplete="off" />
+          <input type="submit" id="button" value="搜索" class="input-submit">
+        </form>
+        <div class="search-tip" id="search-tip">
+          <div class="search-history">
+            <div class="title">历史纪录<a href="javascript:void(0);" id="search-his-del">清除</a></div>
+            <ul id="search-his-list">
+                          </ul>
+          </div>
+          <div class="search-hot">
+            <div class="title">热门搜索...</div>
+            <ul>
+                                          <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E7%94%BB%E5%86%8C">画册</a></li>
+                            <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E5%90%8D%E7%89%87">名片</a></li>
+                                        </ul>
+          </div>
+        </div>
+      </div>
+      <div class="keyword">
+        <ul>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E5%90%8D%E7%89%87">名片</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E5%BD%A9%E9%A1%B5">彩页</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E7%94%BB%E5%86%8C">画册</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E4%B8%8D%E5%B9%B2%E8%83%B6">不干胶</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E7%BA%B8%E6%8A%BD">纸抽</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E6%8C%82%E5%8E%86">挂历</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E5%96%B7%E7%BB%98%E5%B8%83">喷绘布</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E8%B6%85%E8%96%84%E7%81%AF%E7%AE%B1">超薄灯箱</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E6%B5%B7%E6%8A%A5">海报</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E6%8A%98%E9%A1%B5">折页</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E5%96%B7%E7%BB%98%E5%B8%83">喷绘布</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E7%81%AF%E7%AE%B1">灯箱</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E5%B7%A5%E8%89%BA%E5%AD%97">工艺字</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E4%BA%A4%E9%80%9A%E6%A0%87%E7%A4%BA">交通标示</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=PVC">PVC</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E4%B8%AA%E6%80%A7%E5%8D%B0%E5%88%B7">个性印刷</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E7%85%A7%E6%98%8E">照明</a></li>
+                    <li><a href="http://www.ggrsc.com/index.php?act=search&op=index&keyword=%E5%B8%90%E7%AF%B7">帐篷</a></li>
+                  </ul>
+      </div>
+    </div>
+    <div class="head-user-menu">
+      <dl class="my-cart">
+        <div class="addcart-goods-num">0</div>
+        <dt><span class="ico"></span>我的购物车<i class="arrow"></i></dt>
+        <dd>
+          <div class="sub-title">
+            <h4>最新加入的商品</h4>
+          </div>
+          <div class="incart-goods-box">
+            <div class="incart-goods"> <img class="loading" src="http://www.ggrsc.com/templates/default/images/loading.gif" /> </div>
+          </div>
+          <div class="checkout"> <span class="total-price">共<i>0</i>种商品</span><a href="http://www.ggrsc.com/index.php?act=cart" class="btn-cart">结算购物车中的商品</a> </div>
+        </dd>
+      </dl>
+    </div>
+  </header>
+</div>
+<!-- PublicHeadLayout End --> 
+
+<!-- publicNavLayout Begin -->
+<nav class="public-nav-layout ">
+<div class="wrapper">
+<div class="all-category">
+    
+<div class="title"><i></i>
+  <h3><a href="http://www.ggrsc.com/category.html">全部商品分类</a></h3>
+</div>
+<div class="category">
+  <ul class="menu">
+        
+    <li cat_id="825" class="odd">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/05325452297626160.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/825/">商务印刷</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="825">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/711/" title="名片">名片</a></span>
+                        <span><a href="http://www.ggrsc.com/1103/" title="不干胶/特种标签">不干胶/特种标签</a></span>
+                        <span><a href="http://www.ggrsc.com/841/" title="彩页/折页/封套">彩页/折页/封套</a></span>
+                        <span><a href="http://www.ggrsc.com/843/" title="画册">画册</a></span>
+                        <span><a href="http://www.ggrsc.com/725/" title="海报">海报</a></span>
+                        <span><a href="http://www.ggrsc.com/714/" title="广告纸杯">广告纸杯</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/826/">纸品区域</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1190/">广告纸碗</a>
+                            <a href="http://www.ggrsc.com/711/">名片</a>
+                            <a href="http://www.ggrsc.com/1103/">不干胶/特种标签</a>
+                            <a href="http://www.ggrsc.com/841/">彩页/折页/封套</a>
+                            <a href="http://www.ggrsc.com/843/">画册</a>
+                            <a href="http://www.ggrsc.com/725/">海报</a>
+                            <a href="http://www.ggrsc.com/712/">手提袋</a>
+                            <a href="http://www.ggrsc.com/726/">台历/挂历</a>
+                            <a href="http://www.ggrsc.com/728/">对联</a>
+                            <a href="http://www.ggrsc.com/714/">广告纸杯</a>
+                            <a href="http://www.ggrsc.com/715/">广告纸抽</a>
+                            <a href="http://www.ggrsc.com/727/">无碳联单/机打票据</a>
+                            <a href="http://www.ggrsc.com/1155/">营销卡券</a>
+                            <a href="http://www.ggrsc.com/720/">档案袋/信封</a>
+                            <a href="http://www.ggrsc.com/882/">扑克牌</a>
+                            <a href="http://www.ggrsc.com/1152/">钢化膜/光盘盒</a>
+                            <a href="http://www.ggrsc.com/839/">便签</a>
+                            <a href="http://www.ggrsc.com/1150/">筷子套</a>
+                            <a href="http://www.ggrsc.com/1156/">洗车脚垫</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/827/">PVC区域</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/723/">0.38pvc名片</a>
+                            <a href="http://www.ggrsc.com/1124/">0.76标准卡</a>
+                            <a href="http://www.ggrsc.com/724/">广告扇</a>
+                            <a href="http://www.ggrsc.com/1157/">人像卡</a>
+                            <a href="http://www.ggrsc.com/1158/">异形卡</a>
+                            <a href="http://www.ggrsc.com/1159/">挪车卡</a>
+                            <a href="http://www.ggrsc.com/1160/">智能卡（IC/ID）</a>
+                            <a href="http://www.ggrsc.com/1161/">磁条卡</a>
+                            <a href="http://www.ggrsc.com/1162/">会员系统（软件）</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/828/">特种印刷</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/721/">鼠标垫</a>
+                            <a href="http://www.ggrsc.com/722/">无纺布类</a>
+                            <a href="http://www.ggrsc.com/1144/">金属卡</a>
+                            <a href="http://www.ggrsc.com/834/">新闻报纸</a>
+                            <a href="http://www.ggrsc.com/1147/">PP透明袋</a>
+                            <a href="http://www.ggrsc.com/1145/">广告车套</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/829/">个性印刷</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/719/">证件</a>
+                            <a href="http://www.ggrsc.com/851/">节日贺卡</a>
+                            <a href="http://www.ggrsc.com/852/">纪念册</a>
+                            <a href="http://www.ggrsc.com/853/">通讯录</a>
+                            <a href="http://www.ggrsc.com/878/">广告抱枕</a>
+                            <a href="http://www.ggrsc.com/1163/">笔记本</a>
+                            <a href="http://www.ggrsc.com/1164/">红包</a>
+                            <a href="http://www.ggrsc.com/1146/">办公套餐</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/830/">数码印刷</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/855/">短板印刷</a>
+                            <a href="http://www.ggrsc.com/875/">菜单/谱</a>
+                            <a href="http://www.ggrsc.com/865/">个性画册</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/1153/">包装区域</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1191/">一次性封口膜</a>
+                            <a href="http://www.ggrsc.com/1165/">彩箱</a>
+                            <a href="http://www.ggrsc.com/1166/">草箱</a>
+                            <a href="http://www.ggrsc.com/1167/">蛋糕盒</a>
+                            <a href="http://www.ggrsc.com/1168/">家居用品包装</a>
+                            <a href="http://www.ggrsc.com/1169/">食品包装</a>
+                            <a href="http://www.ggrsc.com/1170/">办公礼品</a>
+                            <a href="http://www.ggrsc.com/1171/">化妆品</a>
+                            <a href="http://www.ggrsc.com/1172/">保健医药</a>
+                            <a href="http://www.ggrsc.com/1173/">母婴玩具</a>
+                            <a href="http://www.ggrsc.com/1174/">科技数码</a>
+                            <a href="http://www.ggrsc.com/1175/">服饰服装</a>
+                            <a href="http://www.ggrsc.com/1176/">精品礼盒</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/827/"><img src="http://img.ggrsc.com/goods_class/05330562280457811.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/1153/"><img src="http://img.ggrsc.com/goods_class/05330562280474094.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="2" class="even">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849343852775378.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/2/">灯箱与照明</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="2">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/153/" title="旋转灯箱">旋转灯箱</a></span>
+                        <span><a href="http://www.ggrsc.com/156/" title="亚克力灯箱">亚克力灯箱</a></span>
+                        <span><a href="http://www.ggrsc.com/159/" title="LED灯箱">LED灯箱</a></span>
+                        <span><a href="http://www.ggrsc.com/180/" title="点餐灯箱">点餐灯箱</a></span>
+                        <span><a href="http://www.ggrsc.com/182/" title="水晶灯箱">水晶灯箱</a></span>
+                        <span><a href="http://www.ggrsc.com/189/" title="指路牌灯箱">指路牌灯箱</a></span>
+                        <span><a href="http://www.ggrsc.com/190/" title="立柱灯箱">立柱灯箱</a></span>
+                        <span><a href="http://www.ggrsc.com/163/" title="广告射灯">广告射灯</a></span>
+                        <span><a href="http://www.ggrsc.com/165/" title="家居照明">家居照明</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/151/">灯箱</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1088/">磁吸灯箱</a>
+                            <a href="http://www.ggrsc.com/1151/">奶茶灯箱</a>
+                            <a href="http://www.ggrsc.com/1177/">苹果灯箱</a>
+                            <a href="http://www.ggrsc.com/153/">旋转灯箱</a>
+                            <a href="http://www.ggrsc.com/156/">亚克力灯箱</a>
+                            <a href="http://www.ggrsc.com/157/">卷动灯箱</a>
+                            <a href="http://www.ggrsc.com/158/">超薄灯箱</a>
+                            <a href="http://www.ggrsc.com/159/">LED灯箱</a>
+                            <a href="http://www.ggrsc.com/160/">立式灯箱</a>
+                            <a href="http://www.ggrsc.com/161/">吸塑灯箱</a>
+                            <a href="http://www.ggrsc.com/179/">滚动灯箱</a>
+                            <a href="http://www.ggrsc.com/180/">点餐灯箱</a>
+                            <a href="http://www.ggrsc.com/181/">玻璃钢灯箱</a>
+                            <a href="http://www.ggrsc.com/182/">水晶灯箱</a>
+                            <a href="http://www.ggrsc.com/184/">人体感应灯箱</a>
+                            <a href="http://www.ggrsc.com/185/">广告垃圾箱</a>
+                            <a href="http://www.ggrsc.com/186/">广告擦鞋机</a>
+                            <a href="http://www.ggrsc.com/187/">候车亭灯箱</a>
+                            <a href="http://www.ggrsc.com/188/">换画灯箱</a>
+                            <a href="http://www.ggrsc.com/189/">指路牌灯箱</a>
+                            <a href="http://www.ggrsc.com/190/">立柱灯箱</a>
+                            <a href="http://www.ggrsc.com/191/">LED超薄灯箱</a>
+                            <a href="http://www.ggrsc.com/192/">立体画灯箱</a>
+                            <a href="http://www.ggrsc.com/193/">拉布灯箱</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/152/">照明</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/162/">护栏管</a>
+                            <a href="http://www.ggrsc.com/163/">广告射灯</a>
+                            <a href="http://www.ggrsc.com/164/">投光灯</a>
+                            <a href="http://www.ggrsc.com/165/">家居照明</a>
+                            <a href="http://www.ggrsc.com/166/">道路灯</a>
+                            <a href="http://www.ggrsc.com/167/">泛光灯</a>
+                            <a href="http://www.ggrsc.com/168/">白炽灯</a>
+                            <a href="http://www.ggrsc.com/169/">格栅灯</a>
+                            <a href="http://www.ggrsc.com/170/">景观灯</a>
+                            <a href="http://www.ggrsc.com/171/">卫浴灯</a>
+                            <a href="http://www.ggrsc.com/172/">楼梯灯</a>
+                            <a href="http://www.ggrsc.com/173/">地埋灯</a>
+                            <a href="http://www.ggrsc.com/174/">节能灯</a>
+                            <a href="http://www.ggrsc.com/175/">激光灯</a>
+                            <a href="http://www.ggrsc.com/176/">荧光灯</a>
+                            <a href="http://www.ggrsc.com/177/">像素灯</a>
+                            <a href="http://www.ggrsc.com/178/">幕墙灯</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/151/"><img src="http://img.ggrsc.com/goods_class/05330564466685261.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/152/"><img src="http://img.ggrsc.com/goods_class/05330564466706255.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="308" class="odd">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849344505821846.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/308/">喷绘写真制作</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="308">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/1057/" title="喷绘布">喷绘布</a></span>
+                        <span><a href="http://www.ggrsc.com/314/" title="网格布">网格布</a></span>
+                        <span><a href="http://www.ggrsc.com/320/" title="双面喷绘布">双面喷绘布</a></span>
+                        <span><a href="http://www.ggrsc.com/1058/" title="反光喷绘膜">反光喷绘膜</a></span>
+                        <span><a href="http://www.ggrsc.com/1060/" title="写真布">写真布</a></span>
+                        <span><a href="http://www.ggrsc.com/1065/" title="直喷PVC">直喷PVC</a></span>
+                        <span><a href="http://www.ggrsc.com/1067/" title="无纺布">无纺布</a></span>
+                        <span><a href="http://www.ggrsc.com/326/" title="背胶">背胶</a></span>
+                        <span><a href="http://www.ggrsc.com/329/" title="灯箱片">灯箱片</a></span>
+                        <span><a href="http://www.ggrsc.com/357/" title="PET灯片">PET灯片</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/309/">喷绘材料</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1057/">喷绘布</a>
+                            <a href="http://www.ggrsc.com/1136/">色带</a>
+                            <a href="http://www.ggrsc.com/314/">网格布</a>
+                            <a href="http://www.ggrsc.com/315/">单面透</a>
+                            <a href="http://www.ggrsc.com/316/">车贴</a>
+                            <a href="http://www.ggrsc.com/317/">灯箱布</a>
+                            <a href="http://www.ggrsc.com/318/">帆布</a>
+                            <a href="http://www.ggrsc.com/319/">PVC硬片</a>
+                            <a href="http://www.ggrsc.com/320/">双面喷绘布</a>
+                            <a href="http://www.ggrsc.com/321/">热升华直印布</a>
+                            <a href="http://www.ggrsc.com/322/">刀刮布</a>
+                            <a href="http://www.ggrsc.com/323/">涂层布</a>
+                            <a href="http://www.ggrsc.com/324/">舞台背景布</a>
+                            <a href="http://www.ggrsc.com/325/">户外条幅布</a>
+                            <a href="http://www.ggrsc.com/1058/">反光喷绘膜</a>
+                            <a href="http://www.ggrsc.com/1059/">反光喷绘布</a>
+                            <a href="http://www.ggrsc.com/1060/">写真布</a>
+                            <a href="http://www.ggrsc.com/1061/">直喷布</a>
+                            <a href="http://www.ggrsc.com/1062/">油画布</a>
+                            <a href="http://www.ggrsc.com/1063/">白画布</a>
+                            <a href="http://www.ggrsc.com/1064/">棉画布</a>
+                            <a href="http://www.ggrsc.com/1065/">直喷PVC</a>
+                            <a href="http://www.ggrsc.com/1066/">透明布</a>
+                            <a href="http://www.ggrsc.com/1067/">无纺布</a>
+                            <a href="http://www.ggrsc.com/1068/">UV软膜</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/310/">写真材料</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/326/">背胶</a>
+                            <a href="http://www.ggrsc.com/327/">PP</a>
+                            <a href="http://www.ggrsc.com/328/">冷裱膜</a>
+                            <a href="http://www.ggrsc.com/329/">灯箱片</a>
+                            <a href="http://www.ggrsc.com/330/">相纸</a>
+                            <a href="http://www.ggrsc.com/331/">PVC胶片</a>
+                            <a href="http://www.ggrsc.com/332/">条幅布</a>
+                            <a href="http://www.ggrsc.com/333/">防水写真布</a>
+                            <a href="http://www.ggrsc.com/334/">金银胶片</a>
+                            <a href="http://www.ggrsc.com/335/">夹黑布</a>
+                            <a href="http://www.ggrsc.com/336/">防水PP合成纸</a>
+                            <a href="http://www.ggrsc.com/337/">防水PP背胶</a>
+                            <a href="http://www.ggrsc.com/338/">彩喷胶片</a>
+                            <a href="http://www.ggrsc.com/339/">彩喷宣纸</a>
+                            <a href="http://www.ggrsc.com/340/">PET水晶相纸</a>
+                            <a href="http://www.ggrsc.com/352/">透明胶片</a>
+                            <a href="http://www.ggrsc.com/353/">丝光绢</a>
+                            <a href="http://www.ggrsc.com/354/">透明背胶</a>
+                            <a href="http://www.ggrsc.com/355/">水性透明PVC</a>
+                            <a href="http://www.ggrsc.com/356/">地板贴膜</a>
+                            <a href="http://www.ggrsc.com/357/">PET灯片</a>
+                            <a href="http://www.ggrsc.com/1138/">玻璃贴膜</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/311/">喷绘写真耗材</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1180/">即时贴</a>
+                            <a href="http://www.ggrsc.com/868/">溶剂墨水</a>
+                            <a href="http://www.ggrsc.com/342/">水性墨水</a>
+                            <a href="http://www.ggrsc.com/343/">清洗液</a>
+                            <a href="http://www.ggrsc.com/344/">弱溶剂墨水</a>
+                            <a href="http://www.ggrsc.com/345/">油性墨水</a>
+                            <a href="http://www.ggrsc.com/346/">UV墨水</a>
+                            <a href="http://www.ggrsc.com/347/">丝印油墨</a>
+                            <a href="http://www.ggrsc.com/348/">压电式喷头</a>
+                            <a href="http://www.ggrsc.com/349/">热发泡式喷头</a>
+                            <a href="http://www.ggrsc.com/350/">单透贴</a>
+                            <a href="http://www.ggrsc.com/351/">墨头</a>
+                            <a href="http://www.ggrsc.com/876/">转接线</a>
+                            <a href="http://www.ggrsc.com/877/">光栅</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/1089/">喷绘写真制作</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1090/">喷绘制作</a>
+                            <a href="http://www.ggrsc.com/1091/">写真制作</a>
+                            <a href="http://www.ggrsc.com/1092/">条幅制作</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/309/"><img src="http://img.ggrsc.com/goods_class/05330565692934191.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/311/"><img src="http://img.ggrsc.com/goods_class/05330565692943201.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="3" class="even">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849346837120218.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/3/">工艺字金属字</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="3">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/1084/" title="芙蓉字">芙蓉字</a></span>
+                        <span><a href="http://www.ggrsc.com/206/" title="亚克力字">亚克力字</a></span>
+                        <span><a href="http://www.ggrsc.com/208/" title="发光字">发光字</a></span>
+                        <span><a href="http://www.ggrsc.com/218/" title="不锈钢字">不锈钢字</a></span>
+                        <span><a href="http://www.ggrsc.com/222/" title="铝字">铝字</a></span>
+                        <span><a href="http://www.ggrsc.com/223/" title="烤漆字">烤漆字</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/200/">工艺字</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1084/">芙蓉字</a>
+                            <a href="http://www.ggrsc.com/1098/">包边字</a>
+                            <a href="http://www.ggrsc.com/1099/">冲孔字</a>
+                            <a href="http://www.ggrsc.com/1101/">背发光字</a>
+                            <a href="http://www.ggrsc.com/1142/">立体字</a>
+                            <a href="http://www.ggrsc.com/1196/">无边字</a>
+                            <a href="http://www.ggrsc.com/206/">亚克力字</a>
+                            <a href="http://www.ggrsc.com/207/">吸塑字</a>
+                            <a href="http://www.ggrsc.com/208/">发光字</a>
+                            <a href="http://www.ggrsc.com/209/">PVC字</a>
+                            <a href="http://www.ggrsc.com/210/">LED发光字</a>
+                            <a href="http://www.ggrsc.com/211/">霓虹灯字</a>
+                            <a href="http://www.ggrsc.com/212/">水晶字</a>
+                            <a href="http://www.ggrsc.com/213/">环氧树脂字</a>
+                            <a href="http://www.ggrsc.com/214/">迷你字</a>
+                            <a href="http://www.ggrsc.com/215/">发光字专用线</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/201/">金属字</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1197/">不锈钢字壳</a>
+                            <a href="http://www.ggrsc.com/1198/">冲孔字字壳</a>
+                            <a href="http://www.ggrsc.com/218/">不锈钢字</a>
+                            <a href="http://www.ggrsc.com/219/">铜字</a>
+                            <a href="http://www.ggrsc.com/220/">钛金字</a>
+                            <a href="http://www.ggrsc.com/221/">铁字</a>
+                            <a href="http://www.ggrsc.com/222/">铝字</a>
+                            <a href="http://www.ggrsc.com/223/">烤漆字</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/200/"><img src="http://img.ggrsc.com/goods_class/05330566575878668.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/201/"><img src="http://img.ggrsc.com/goods_class/05330566575882974.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="1" class="odd">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849346415545755.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/1/">标识标牌证卡</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="1">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/12/" title="指示导向牌">指示导向牌</a></span>
+                        <span><a href="http://www.ggrsc.com/13/" title="交通指示牌">交通指示牌</a></span>
+                        <span><a href="http://www.ggrsc.com/17/" title="立牌指示牌">立牌指示牌</a></span>
+                        <span><a href="http://www.ggrsc.com/19/" title="发光标识牌">发光标识牌</a></span>
+                        <span><a href="http://www.ggrsc.com/25/" title="笔筒">笔筒</a></span>
+                        <span><a href="http://www.ggrsc.com/26/" title="名片盒">名片盒</a></span>
+                        <span><a href="http://www.ggrsc.com/35/" title="证卡">证卡</a></span>
+                        <span><a href="http://www.ggrsc.com/36/" title="证书">证书</a></span>
+                        <span><a href="http://www.ggrsc.com/38/" title="奖牌">奖牌</a></span>
+                        <span><a href="http://www.ggrsc.com/39/" title="水晶奖杯">水晶奖杯</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/4/">标示标牌</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/12/">指示导向牌</a>
+                            <a href="http://www.ggrsc.com/13/">交通指示牌</a>
+                            <a href="http://www.ggrsc.com/14/">桌面铭牌</a>
+                            <a href="http://www.ggrsc.com/15/">楼宇水牌</a>
+                            <a href="http://www.ggrsc.com/16/">门牌标牌</a>
+                            <a href="http://www.ggrsc.com/17/">立牌指示牌</a>
+                            <a href="http://www.ggrsc.com/18/">亚克力工艺品</a>
+                            <a href="http://www.ggrsc.com/19/">发光标识牌</a>
+                            <a href="http://www.ggrsc.com/20/">科室牌</a>
+                            <a href="http://www.ggrsc.com/21/">腐蚀牌</a>
+                            <a href="http://www.ggrsc.com/22/">导光指示牌</a>
+                            <a href="http://www.ggrsc.com/25/">笔筒</a>
+                            <a href="http://www.ggrsc.com/26/">名片盒</a>
+                            <a href="http://www.ggrsc.com/27/">信报箱</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/5/">证卡奖牌</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/35/">证卡</a>
+                            <a href="http://www.ggrsc.com/36/">证书</a>
+                            <a href="http://www.ggrsc.com/37/">奖杯</a>
+                            <a href="http://www.ggrsc.com/38/">奖牌</a>
+                            <a href="http://www.ggrsc.com/39/">水晶奖杯</a>
+                            <a href="http://www.ggrsc.com/40/">胸牌</a>
+                            <a href="http://www.ggrsc.com/41/">标牌卡</a>
+                            <a href="http://www.ggrsc.com/42/">锦旗</a>
+                            <a href="http://www.ggrsc.com/43/">挂牌</a>
+                            <a href="http://www.ggrsc.com/44/">手环圈</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/6/">标示系统</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/58/">旅游景区</a>
+                            <a href="http://www.ggrsc.com/59/">医疗机构</a>
+                            <a href="http://www.ggrsc.com/60/">政府机关</a>
+                            <a href="http://www.ggrsc.com/61/">教育机构</a>
+                            <a href="http://www.ggrsc.com/62/">银行系统</a>
+                            <a href="http://www.ggrsc.com/63/">体育场馆</a>
+                            <a href="http://www.ggrsc.com/64/">办公楼宇</a>
+                            <a href="http://www.ggrsc.com/65/">公园系统</a>
+                            <a href="http://www.ggrsc.com/66/">酒店系统</a>
+                            <a href="http://www.ggrsc.com/67/">产业园区</a>
+                            <a href="http://www.ggrsc.com/68/">商业场所</a>
+                            <a href="http://www.ggrsc.com/69/">机场车站</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/7/">交通标示</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/74/">交通电子产品</a>
+                            <a href="http://www.ggrsc.com/75/">交通安全设施</a>
+                            <a href="http://www.ggrsc.com/76/">反光膜</a>
+                            <a href="http://www.ggrsc.com/77/">交通标牌</a>
+                            <a href="http://www.ggrsc.com/78/">停车场标牌</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/5/"><img src="http://img.ggrsc.com/goods_class/05330567275088601.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/4/"><img src="http://img.ggrsc.com/goods_class/05330567275105416.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="256" class="even">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849347515759481.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/256/">户外广告设备与安装</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="256">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/264/" title="射灯广告牌">射灯广告牌</a></span>
+                        <span><a href="http://www.ggrsc.com/267/" title="三面翻">三面翻</a></span>
+                        <span><a href="http://www.ggrsc.com/269/" title="电子屏">电子屏</a></span>
+                        <span><a href="http://www.ggrsc.com/270/" title="墙体广告">墙体广告</a></span>
+                        <span><a href="http://www.ggrsc.com/271/" title="灯杆道旗">灯杆道旗</a></span>
+                        <span><a href="http://www.ggrsc.com/272/" title="道闸广告">道闸广告</a></span>
+                        <span><a href="http://www.ggrsc.com/276/" title="广告车">广告车</a></span>
+                        <span><a href="http://www.ggrsc.com/279/" title="电话亭">电话亭</a></span>
+                        <span><a href="http://www.ggrsc.com/280/" title="阅报栏">阅报栏</a></span>
+                        <span><a href="http://www.ggrsc.com/283/" title="投影幕">投影幕</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/258/">广告制作安装</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/264/">射灯广告牌</a>
+                            <a href="http://www.ggrsc.com/265/">霓虹灯广告牌</a>
+                            <a href="http://www.ggrsc.com/266/">单立柱广告牌</a>
+                            <a href="http://www.ggrsc.com/267/">三面翻</a>
+                            <a href="http://www.ggrsc.com/268/">大型灯箱</a>
+                            <a href="http://www.ggrsc.com/269/">电子屏</a>
+                            <a href="http://www.ggrsc.com/270/">墙体广告</a>
+                            <a href="http://www.ggrsc.com/271/">灯杆道旗</a>
+                            <a href="http://www.ggrsc.com/275/">手机饰品</a>
+                            <a href="http://www.ggrsc.com/1094/">注水旗</a>
+                            <a href="http://www.ggrsc.com/1096/">其他</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/259/">户外广告设备</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/272/">道闸广告</a>
+                            <a href="http://www.ggrsc.com/273/">广告机</a>
+                            <a href="http://www.ggrsc.com/274/">其他</a>
+                            <a href="http://www.ggrsc.com/276/">广告车</a>
+                            <a href="http://www.ggrsc.com/277/">候车亭广告</a>
+                            <a href="http://www.ggrsc.com/278/">路标广告</a>
+                            <a href="http://www.ggrsc.com/279/">电话亭</a>
+                            <a href="http://www.ggrsc.com/280/">阅报栏</a>
+                            <a href="http://www.ggrsc.com/281/">互动橱窗</a>
+                            <a href="http://www.ggrsc.com/282/">纳米感应触摸屏</a>
+                            <a href="http://www.ggrsc.com/283/">投影幕</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/259/"><img src="http://img.ggrsc.com/goods_class/05330568011177431.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/259/"><img src="http://img.ggrsc.com/goods_class/05330568011197781.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="470" class="odd">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849347913383394.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/470/">写真设备与工艺设备</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="470">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/1086/" title="UV平板机">UV平板机</a></span>
+                        <span><a href="http://www.ggrsc.com/478/" title="平板喷绘机">平板喷绘机</a></span>
+                        <span><a href="http://www.ggrsc.com/482/" title="压电写真机">压电写真机</a></span>
+                        <span><a href="http://www.ggrsc.com/484/" title="写真机配件">写真机配件</a></span>
+                        <span><a href="http://www.ggrsc.com/485/" title="打扣机">打扣机</a></span>
+                        <span><a href="http://www.ggrsc.com/486/" title="折弯机">折弯机</a></span>
+                        <span><a href="http://www.ggrsc.com/487/" title="热弯机">热弯机</a></span>
+                        <span><a href="http://www.ggrsc.com/489/" title="打标机">打标机</a></span>
+                        <span><a href="http://www.ggrsc.com/491/" title="切割机">切割机</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/471/">喷绘写真设备</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1086/">UV平板机</a>
+                            <a href="http://www.ggrsc.com/1087/">喷绘写真机</a>
+                            <a href="http://www.ggrsc.com/478/">平板喷绘机</a>
+                            <a href="http://www.ggrsc.com/479/">卷材喷绘机</a>
+                            <a href="http://www.ggrsc.com/480/">陶瓷喷绘机</a>
+                            <a href="http://www.ggrsc.com/481/">热发泡写真机</a>
+                            <a href="http://www.ggrsc.com/482/">压电写真机</a>
+                            <a href="http://www.ggrsc.com/483/">喷绘机配件</a>
+                            <a href="http://www.ggrsc.com/484/">写真机配件</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/472/">广告工艺设备</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1120/">圆角机</a>
+                            <a href="http://www.ggrsc.com/475/">气动整理机</a>
+                            <a href="http://www.ggrsc.com/476/">三面翻设备</a>
+                            <a href="http://www.ggrsc.com/477/">淋膜机</a>
+                            <a href="http://www.ggrsc.com/485/">打扣机</a>
+                            <a href="http://www.ggrsc.com/486/">折弯机</a>
+                            <a href="http://www.ggrsc.com/487/">热弯机</a>
+                            <a href="http://www.ggrsc.com/488/">刻字机</a>
+                            <a href="http://www.ggrsc.com/489/">打标机</a>
+                            <a href="http://www.ggrsc.com/490/">刻章机</a>
+                            <a href="http://www.ggrsc.com/491/">切割机</a>
+                            <a href="http://www.ggrsc.com/492/">等离子切割机</a>
+                            <a href="http://www.ggrsc.com/493/">冷裱机</a>
+                            <a href="http://www.ggrsc.com/494/">丝网印刷机</a>
+                            <a href="http://www.ggrsc.com/495/">拼接机</a>
+                            <a href="http://www.ggrsc.com/496/">覆膜机</a>
+                            <a href="http://www.ggrsc.com/497/">抛光机</a>
+                            <a href="http://www.ggrsc.com/498/">火焰抛光机</a>
+                            <a href="http://www.ggrsc.com/509/">平板机</a>
+                            <a href="http://www.ggrsc.com/510/">移印机</a>
+                            <a href="http://www.ggrsc.com/511/">蚀刻机</a>
+                            <a href="http://www.ggrsc.com/512/">接合机</a>
+                            <a href="http://www.ggrsc.com/513/">连接机</a>
+                            <a href="http://www.ggrsc.com/514/">弯字机</a>
+                            <a href="http://www.ggrsc.com/515/">桅角机</a>
+                            <a href="http://www.ggrsc.com/516/">桅圆机</a>
+                            <a href="http://www.ggrsc.com/517/">铆接机</a>
+                            <a href="http://www.ggrsc.com/518/">边机</a>
+                            <a href="http://www.ggrsc.com/519/">雕铣机</a>
+                            <a href="http://www.ggrsc.com/520/">围字机</a>
+                            <a href="http://www.ggrsc.com/521/">折字机</a>
+                            <a href="http://www.ggrsc.com/522/">镂铣机</a>
+                            <a href="http://www.ggrsc.com/523/">线据机</a>
+                            <a href="http://www.ggrsc.com/524/">压痕机</a>
+                            <a href="http://www.ggrsc.com/525/">亚克力修边机</a>
+                            <a href="http://www.ggrsc.com/526/">围圆机</a>
+                            <a href="http://www.ggrsc.com/527/">围角机</a>
+                            <a href="http://www.ggrsc.com/528/">开槽机</a>
+                            <a href="http://www.ggrsc.com/529/">烫金磨光一体机</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/473/">雕刻设备</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/499/">激光雕刻机</a>
+                            <a href="http://www.ggrsc.com/500/">机械雕刻机</a>
+                            <a href="http://www.ggrsc.com/501/">刻字机</a>
+                            <a href="http://www.ggrsc.com/507/">切割机</a>
+                            <a href="http://www.ggrsc.com/508/">雕刻设备配件</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/474/">条幅设备</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/502/">热转印条幅机</a>
+                            <a href="http://www.ggrsc.com/503/">全自动条幅机</a>
+                            <a href="http://www.ggrsc.com/504/">激光条幅机</a>
+                            <a href="http://www.ggrsc.com/505/">彩色条幅机</a>
+                            <a href="http://www.ggrsc.com/506/">双色条幅机</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/471/"><img src="http://img.ggrsc.com/goods_class/05330568677560983.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/472/"><img src="http://img.ggrsc.com/goods_class/05330568677589489.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="593" class="even">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849352366294406.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/593/">广告与雕刻板材</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="593">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/604/" title="亚克力板">亚克力板</a></span>
+                        <span><a href="http://www.ggrsc.com/605/" title="PVC板">PVC板</a></span>
+                        <span><a href="http://www.ggrsc.com/607/" title="PVC结皮板">PVC结皮板</a></span>
+                        <span><a href="http://www.ggrsc.com/612/" title="芙蓉板">芙蓉板</a></span>
+                        <span><a href="http://www.ggrsc.com/614/" title="PP板">PP板</a></span>
+                        <span><a href="http://www.ggrsc.com/618/" title="阳光板">阳光板</a></span>
+                        <span><a href="http://www.ggrsc.com/625/" title="黑白板">黑白板</a></span>
+                        <span><a href="http://www.ggrsc.com/633/" title="珠光板">珠光板</a></span>
+                        <span><a href="http://www.ggrsc.com/610/" title="PC板">PC板</a></span>
+                        <span><a href="http://www.ggrsc.com/611/" title="彩钢扣板">彩钢扣板</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/594/">雕刻板材</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/604/">亚克力板</a>
+                            <a href="http://www.ggrsc.com/605/">PVC板</a>
+                            <a href="http://www.ggrsc.com/606/">PVC发泡板</a>
+                            <a href="http://www.ggrsc.com/607/">PVC结皮板</a>
+                            <a href="http://www.ggrsc.com/608/">双色板</a>
+                            <a href="http://www.ggrsc.com/612/">芙蓉板</a>
+                            <a href="http://www.ggrsc.com/613/">PS有机板</a>
+                            <a href="http://www.ggrsc.com/614/">PP板</a>
+                            <a href="http://www.ggrsc.com/615/">万通板</a>
+                            <a href="http://www.ggrsc.com/616/">泡沫板</a>
+                            <a href="http://www.ggrsc.com/617/">水晶板</a>
+                            <a href="http://www.ggrsc.com/618/">阳光板</a>
+                            <a href="http://www.ggrsc.com/619/">雪弗板</a>
+                            <a href="http://www.ggrsc.com/620/">塑料板</a>
+                            <a href="http://www.ggrsc.com/621/">导光板</a>
+                            <a href="http://www.ggrsc.com/622/">铝塑板</a>
+                            <a href="http://www.ggrsc.com/623/">颜色板</a>
+                            <a href="http://www.ggrsc.com/624/">透明板</a>
+                            <a href="http://www.ggrsc.com/625/">黑白板</a>
+                            <a href="http://www.ggrsc.com/626/">镜面板</a>
+                            <a href="http://www.ggrsc.com/627/">UV板</a>
+                            <a href="http://www.ggrsc.com/628/">树脂板</a>
+                            <a href="http://www.ggrsc.com/629/">密度板</a>
+                            <a href="http://www.ggrsc.com/630/">弗龙板</a>
+                            <a href="http://www.ggrsc.com/631/">安迪板</a>
+                            <a href="http://www.ggrsc.com/632/">覆纸板</a>
+                            <a href="http://www.ggrsc.com/633/">珠光板</a>
+                            <a href="http://www.ggrsc.com/634/">磁板</a>
+                            <a href="http://www.ggrsc.com/635/">布金银板</a>
+                            <a href="http://www.ggrsc.com/636/">迷你板</a>
+                            <a href="http://www.ggrsc.com/637/">吸塑板</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/595/">广告板材</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/609/">KT板</a>
+                            <a href="http://www.ggrsc.com/610/">PC板</a>
+                            <a href="http://www.ggrsc.com/611/">彩钢扣板</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/594/"><img src="http://img.ggrsc.com/goods_class/05330569256709376.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/595/"><img src="http://img.ggrsc.com/goods_class/05330569256723357.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="888" class="odd">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849353182209090.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/888/">广告辅料与工具</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="888">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/644/" title="刀具">刀具</a></span>
+                        <span><a href="http://www.ggrsc.com/645/" title="调漆">调漆</a></span>
+                        <span><a href="http://www.ggrsc.com/647/" title="专用线">专用线</a></span>
+                        <span><a href="http://www.ggrsc.com/897/" title="尼龙扎带">尼龙扎带</a></span>
+                        <span><a href="http://www.ggrsc.com/900/" title="枪钉">枪钉</a></span>
+                        <span><a href="http://www.ggrsc.com/901/" title="广告钉">广告钉</a></span>
+                        <span><a href="http://www.ggrsc.com/909/" title="边挂钩">边挂钩</a></span>
+                        <span><a href="http://www.ggrsc.com/905/" title="灯箱型材">灯箱型材</a></span>
+                        <span><a href="http://www.ggrsc.com/906/" title="灯箱边条">灯箱边条</a></span>
+                        <span><a href="http://www.ggrsc.com/893/" title="冬胶王">冬胶王</a></span>
+                        <span><a href="http://www.ggrsc.com/914/" title="胶枪">胶枪</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/889/">广告辅料</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1123/">自动喷漆</a>
+                            <a href="http://www.ggrsc.com/644/">刀具</a>
+                            <a href="http://www.ggrsc.com/645/">调漆</a>
+                            <a href="http://www.ggrsc.com/646/">字边条</a>
+                            <a href="http://www.ggrsc.com/647/">专用线</a>
+                            <a href="http://www.ggrsc.com/648/">其他</a>
+                            <a href="http://www.ggrsc.com/895/">广告螺丝</a>
+                            <a href="http://www.ggrsc.com/896/">铝合金框条</a>
+                            <a href="http://www.ggrsc.com/897/">尼龙扎带</a>
+                            <a href="http://www.ggrsc.com/898/">广告挂轴</a>
+                            <a href="http://www.ggrsc.com/899/">扣眼</a>
+                            <a href="http://www.ggrsc.com/900/">枪钉</a>
+                            <a href="http://www.ggrsc.com/901/">广告钉</a>
+                            <a href="http://www.ggrsc.com/903/">展板边框条</a>
+                            <a href="http://www.ggrsc.com/904/">铝合金槽角</a>
+                            <a href="http://www.ggrsc.com/908/">不锈钢槽角</a>
+                            <a href="http://www.ggrsc.com/909/">边挂钩</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/890/">灯箱辅料</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/905/">灯箱型材</a>
+                            <a href="http://www.ggrsc.com/906/">灯箱边条</a>
+                            <a href="http://www.ggrsc.com/907/">电子镇流器</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/891/">胶水系列</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/638/">三氯甲烷</a>
+                            <a href="http://www.ggrsc.com/639/">粘合剂</a>
+                            <a href="http://www.ggrsc.com/640/">双面胶</a>
+                            <a href="http://www.ggrsc.com/641/">万能胶</a>
+                            <a href="http://www.ggrsc.com/642/">亚克力胶</a>
+                            <a href="http://www.ggrsc.com/643/">泡棉胶</a>
+                            <a href="http://www.ggrsc.com/893/">冬胶王</a>
+                            <a href="http://www.ggrsc.com/910/">粘胶</a>
+                            <a href="http://www.ggrsc.com/911/">玻璃胶</a>
+                            <a href="http://www.ggrsc.com/912/">泡沫胶</a>
+                            <a href="http://www.ggrsc.com/913/">三秒胶</a>
+                            <a href="http://www.ggrsc.com/935/">无影胶</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/892/">工具</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/902/">打扣机</a>
+                            <a href="http://www.ggrsc.com/914/">胶枪</a>
+                            <a href="http://www.ggrsc.com/915/">不锈钢打孔钳</a>
+                            <a href="http://www.ggrsc.com/916/">金属字折弯钳</a>
+                            <a href="http://www.ggrsc.com/917/">亚克力折弯器</a>
+                            <a href="http://www.ggrsc.com/918/">边角钳</a>
+                            <a href="http://www.ggrsc.com/919/">穿灯钳</a>
+                            <a href="http://www.ggrsc.com/920/">吹尘枪</a>
+                            <a href="http://www.ggrsc.com/921/">电烙铁</a>
+                            <a href="http://www.ggrsc.com/922/">角磨机</a>
+                            <a href="http://www.ggrsc.com/923/">水平仪</a>
+                            <a href="http://www.ggrsc.com/924/">电钻</a>
+                            <a href="http://www.ggrsc.com/925/">钉枪</a>
+                            <a href="http://www.ggrsc.com/937/">剥线钳</a>
+                            <a href="http://www.ggrsc.com/938/">剪刀</a>
+                            <a href="http://www.ggrsc.com/939/">拉布钳</a>
+                            <a href="http://www.ggrsc.com/940/">老虎钳</a>
+                            <a href="http://www.ggrsc.com/941/">卷尺</a>
+                            <a href="http://www.ggrsc.com/942/">刮板</a>
+                            <a href="http://www.ggrsc.com/943/">扳手</a>
+                            <a href="http://www.ggrsc.com/944/">其他</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/889/"><img src="http://img.ggrsc.com/goods_class/05330569905833784.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/891/"><img src="http://img.ggrsc.com/goods_class/05330569905859871.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="530" class="even">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849348133390475.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/530/">展览展示器材与机械</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="530">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/1076/" title="抽奖用品">抽奖用品</a></span>
+                        <span><a href="http://www.ggrsc.com/1079/" title="门型展架">门型展架</a></span>
+                        <span><a href="http://www.ggrsc.com/1081/" title="画架">画架</a></span>
+                        <span><a href="http://www.ggrsc.com/1083/" title="宣传栏">宣传栏</a></span>
+                        <span><a href="http://www.ggrsc.com/541/" title="易拉宝">易拉宝</a></span>
+                        <span><a href="http://www.ggrsc.com/545/" title="旗杆">旗杆</a></span>
+                        <span><a href="http://www.ggrsc.com/547/" title="海报架">海报架</a></span>
+                        <span><a href="http://www.ggrsc.com/549/" title="广告帐篷">广告帐篷</a></span>
+                        <span><a href="http://www.ggrsc.com/551/" title="氢气球">氢气球</a></span>
+                        <span><a href="http://www.ggrsc.com/552/" title="充气拱门">充气拱门</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/531/">展览展示器材</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1076/">抽奖用品</a>
+                            <a href="http://www.ggrsc.com/1079/">门型展架</a>
+                            <a href="http://www.ggrsc.com/1081/">画架</a>
+                            <a href="http://www.ggrsc.com/1083/">宣传栏</a>
+                            <a href="http://www.ggrsc.com/1093/">帐篷</a>
+                            <a href="http://www.ggrsc.com/1108/">广告夹</a>
+                            <a href="http://www.ggrsc.com/1137/">展示架</a>
+                            <a href="http://www.ggrsc.com/1179/">画框</a>
+                            <a href="http://www.ggrsc.com/24/">POP展示用品</a>
+                            <a href="http://www.ggrsc.com/541/">易拉宝</a>
+                            <a href="http://www.ggrsc.com/542/">X展架</a>
+                            <a href="http://www.ggrsc.com/543/">拉网展架</a>
+                            <a href="http://www.ggrsc.com/544/">桁架</a>
+                            <a href="http://www.ggrsc.com/545/">旗杆</a>
+                            <a href="http://www.ggrsc.com/546/">资料架</a>
+                            <a href="http://www.ggrsc.com/547/">海报架</a>
+                            <a href="http://www.ggrsc.com/548/">报刊架</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/532/">气模帐篷</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/549/">广告帐篷</a>
+                            <a href="http://www.ggrsc.com/550/">幻映彩球</a>
+                            <a href="http://www.ggrsc.com/551/">氢气球</a>
+                            <a href="http://www.ggrsc.com/552/">充气拱门</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/533/">旗帜</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1082/">道旗</a>
+                            <a href="http://www.ggrsc.com/1102/">锦旗绶带</a>
+                            <a href="http://www.ggrsc.com/1127/">五彩串旗</a>
+                            <a href="http://www.ggrsc.com/1128/">袖章</a>
+                            <a href="http://www.ggrsc.com/1192/">手拉旗</a>
+                            <a href="http://www.ggrsc.com/1193/">手摇旗</a>
+                            <a href="http://www.ggrsc.com/553/">各国国旗</a>
+                            <a href="http://www.ggrsc.com/554/">会议礼堂旗</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/534/">舞台机械</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/555/">烟雾机</a>
+                            <a href="http://www.ggrsc.com/556/">彩虹机</a>
+                            <a href="http://www.ggrsc.com/557/">喷火机</a>
+                            <a href="http://www.ggrsc.com/558/">雨雾机</a>
+                            <a href="http://www.ggrsc.com/559/">礼炮机</a>
+                            <a href="http://www.ggrsc.com/596/">干冰机</a>
+                            <a href="http://www.ggrsc.com/597/">冷烟火</a>
+                            <a href="http://www.ggrsc.com/598/">旋转台</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/532/"><img src="http://img.ggrsc.com/goods_class/05330570791912159.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/534/"><img src="http://img.ggrsc.com/goods_class/05330570791946321.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="662" class="odd">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849352648636017.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/662/">LED照明材料</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="662">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/667/" title="LED筒灯">LED筒灯</a></span>
+                        <span><a href="http://www.ggrsc.com/672/" title="LED点光源">LED点光源</a></span>
+                        <span><a href="http://www.ggrsc.com/673/" title="LED洗墙灯">LED洗墙灯</a></span>
+                        <span><a href="http://www.ggrsc.com/936/" title="LED穿孔灯">LED穿孔灯</a></span>
+                        <span><a href="http://www.ggrsc.com/680/" title="MO源">MO源</a></span>
+                        <span><a href="http://www.ggrsc.com/683/" title="霓虹灯灯带">霓虹灯灯带</a></span>
+                        <span><a href="http://www.ggrsc.com/692/" title="灯管">灯管</a></span>
+                        <span><a href="http://www.ggrsc.com/694/" title="控制器">控制器</a></span>
+                        <span><a href="http://www.ggrsc.com/696/" title="霓虹灯">霓虹灯</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/663/">LED灯</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1141/">LED贴片灯</a>
+                            <a href="http://www.ggrsc.com/667/">LED筒灯</a>
+                            <a href="http://www.ggrsc.com/668/">LED线型灯</a>
+                            <a href="http://www.ggrsc.com/669/">LED冷光灯</a>
+                            <a href="http://www.ggrsc.com/670/">LED幕墙灯</a>
+                            <a href="http://www.ggrsc.com/671/">LED日光灯</a>
+                            <a href="http://www.ggrsc.com/672/">LED点光源</a>
+                            <a href="http://www.ggrsc.com/673/">LED洗墙灯</a>
+                            <a href="http://www.ggrsc.com/710/">LED跑马灯</a>
+                            <a href="http://www.ggrsc.com/716/">LED霓虹灯</a>
+                            <a href="http://www.ggrsc.com/936/">LED穿孔灯</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/664/">LED材料</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1126/">荧光板</a>
+                            <a href="http://www.ggrsc.com/674/">导光板</a>
+                            <a href="http://www.ggrsc.com/675/">LED支架</a>
+                            <a href="http://www.ggrsc.com/676/">LED胶带</a>
+                            <a href="http://www.ggrsc.com/677/">LED铝线</a>
+                            <a href="http://www.ggrsc.com/678/">扩晶环</a>
+                            <a href="http://www.ggrsc.com/679/">衬底晶体</a>
+                            <a href="http://www.ggrsc.com/680/">MO源</a>
+                            <a href="http://www.ggrsc.com/681/">LED扁线灯带</a>
+                            <a href="http://www.ggrsc.com/682/">彩虹管</a>
+                            <a href="http://www.ggrsc.com/683/">霓虹灯灯带</a>
+                            <a href="http://www.ggrsc.com/684/">发光管</a>
+                            <a href="http://www.ggrsc.com/685/">户内外LED显示屏</a>
+                            <a href="http://www.ggrsc.com/686/">双基色显示屏</a>
+                            <a href="http://www.ggrsc.com/687/">LED控制系统</a>
+                            <a href="http://www.ggrsc.com/688/">LED数码管</a>
+                            <a href="http://www.ggrsc.com/689/">硅胶灯条</a>
+                            <a href="http://www.ggrsc.com/690/">泛彩灯带</a>
+                            <a href="http://www.ggrsc.com/703/">LED模组</a>
+                            <a href="http://www.ggrsc.com/704/">软光条</a>
+                            <a href="http://www.ggrsc.com/705/">数码管显示屏</a>
+                            <a href="http://www.ggrsc.com/706/">LED像素屏</a>
+                            <a href="http://www.ggrsc.com/707/">LED幕墙屏</a>
+                            <a href="http://www.ggrsc.com/708/">发光条</a>
+                            <a href="http://www.ggrsc.com/709/">LED电源</a>
+                            <a href="http://www.ggrsc.com/1085/">其他</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/665/">霓虹灯</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/691/">冷阴极管</a>
+                            <a href="http://www.ggrsc.com/692/">灯管</a>
+                            <a href="http://www.ggrsc.com/693/">变压器</a>
+                            <a href="http://www.ggrsc.com/694/">控制器</a>
+                            <a href="http://www.ggrsc.com/695/">无极灯</a>
+                            <a href="http://www.ggrsc.com/696/">霓虹灯</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/666/">EL照明</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/697/">EL冷光片</a>
+                            <a href="http://www.ggrsc.com/698/">EL发光材料</a>
+                            <a href="http://www.ggrsc.com/699/">EL发光粉</a>
+                            <a href="http://www.ggrsc.com/700/">EL背光源</a>
+                            <a href="http://www.ggrsc.com/701/">EL屏</a>
+                            <a href="http://www.ggrsc.com/702/">EL发光线</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/664/"><img src="http://img.ggrsc.com/goods_class/05330573793590170.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/665/"><img src="http://img.ggrsc.com/goods_class/05330573793612600.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="730" class="even">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849353042725089.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/730/">广告促销与礼品</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="730">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/535/" title="广告火柴">广告火柴</a></span>
+                        <span><a href="http://www.ggrsc.com/739/" title="广告伞">广告伞</a></span>
+                        <span><a href="http://www.ggrsc.com/742/" title="钥匙扣">钥匙扣</a></span>
+                        <span><a href="http://www.ggrsc.com/744/" title="打火机">打火机</a></span>
+                        <span><a href="http://www.ggrsc.com/792/" title="沙滩伞">沙滩伞</a></span>
+                        <span><a href="http://www.ggrsc.com/398/" title="折叠椅">折叠椅</a></span>
+                        <span><a href="http://www.ggrsc.com/399/" title="毛巾">毛巾</a></span>
+                        <span><a href="http://www.ggrsc.com/226/" title="雨衣">雨衣</a></span>
+                        <span><a href="http://www.ggrsc.com/426/" title="料理机">料理机</a></span>
+                        <span><a href="http://www.ggrsc.com/432/" title="开水煲">开水煲</a></span>
+                        <span><a href="http://www.ggrsc.com/54/" title="跳舞毯">跳舞毯</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/1109/">箱体</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1111/">募捐箱</a>
+                            <a href="http://www.ggrsc.com/1112/">安全药箱</a>
+                            <a href="http://www.ggrsc.com/1113/">钥匙管理箱</a>
+                            <a href="http://www.ggrsc.com/1114/">抽奖箱</a>
+                            <a href="http://www.ggrsc.com/1115/">印章箱</a>
+                            <a href="http://www.ggrsc.com/1116/">收银箱</a>
+                            <a href="http://www.ggrsc.com/1117/">投票箱</a>
+                            <a href="http://www.ggrsc.com/1125/">工具箱</a>
+                            <a href="http://www.ggrsc.com/23/">意见箱</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/1195/">购物车/购物篮</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                          </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/731/">促销礼品</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1186/">广告笔袋</a>
+                            <a href="http://www.ggrsc.com/1187/">指甲剪</a>
+                            <a href="http://www.ggrsc.com/535/">广告火柴</a>
+                            <a href="http://www.ggrsc.com/560/">广告对联</a>
+                            <a href="http://www.ggrsc.com/561/">胸章</a>
+                            <a href="http://www.ggrsc.com/563/">挂历</a>
+                            <a href="http://www.ggrsc.com/564/">广告手链</a>
+                            <a href="http://www.ggrsc.com/565/">钥匙包</a>
+                            <a href="http://www.ggrsc.com/566/">广告镜</a>
+                            <a href="http://www.ggrsc.com/738/">广告杯</a>
+                            <a href="http://www.ggrsc.com/739/">广告伞</a>
+                            <a href="http://www.ggrsc.com/740/">广告烟嘴</a>
+                            <a href="http://www.ggrsc.com/741/">广告衫</a>
+                            <a href="http://www.ggrsc.com/742/">钥匙扣</a>
+                            <a href="http://www.ggrsc.com/743/">广告扑克</a>
+                            <a href="http://www.ggrsc.com/744/">打火机</a>
+                            <a href="http://www.ggrsc.com/745/">烟灰缸</a>
+                            <a href="http://www.ggrsc.com/746/">广告卷尺</a>
+                            <a href="http://www.ggrsc.com/747/">开瓶器</a>
+                            <a href="http://www.ggrsc.com/748/">广告扇</a>
+                            <a href="http://www.ggrsc.com/749/">修容套装</a>
+                            <a href="http://www.ggrsc.com/750/">名片架</a>
+                            <a href="http://www.ggrsc.com/751/">牙签筒</a>
+                            <a href="http://www.ggrsc.com/752/">纸巾湿巾</a>
+                            <a href="http://www.ggrsc.com/818/">鼠标垫</a>
+                            <a href="http://www.ggrsc.com/819/">手电筒</a>
+                            <a href="http://www.ggrsc.com/820/">多功能刀</a>
+                            <a href="http://www.ggrsc.com/821/">广告笔</a>
+                            <a href="http://www.ggrsc.com/822/">无纺布包</a>
+                            <a href="http://www.ggrsc.com/823/">广告地垫</a>
+                            <a href="http://www.ggrsc.com/824/">杂物架</a>
+                            <a href="http://www.ggrsc.com/1069/">手机挂件</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/732/">电子礼品</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/753/">自发电手电筒</a>
+                            <a href="http://www.ggrsc.com/754/">太阳能摇摆器</a>
+                            <a href="http://www.ggrsc.com/755/">太阳能手电筒</a>
+                            <a href="http://www.ggrsc.com/756/">万年历收音机</a>
+                            <a href="http://www.ggrsc.com/757/">广告小夜灯</a>
+                            <a href="http://www.ggrsc.com/758/">USB保温碟</a>
+                            <a href="http://www.ggrsc.com/759/">迷你小风扇</a>
+                            <a href="http://www.ggrsc.com/780/">电筒钥匙扣</a>
+                            <a href="http://www.ggrsc.com/781/">投影时钟</a>
+                            <a href="http://www.ggrsc.com/782/">车载氧吧</a>
+                            <a href="http://www.ggrsc.com/783/">车载数码</a>
+                            <a href="http://www.ggrsc.com/784/">数码相框</a>
+                            <a href="http://www.ggrsc.com/785/">电子药盒</a>
+                            <a href="http://www.ggrsc.com/786/">电子时钟</a>
+                            <a href="http://www.ggrsc.com/787/">海景鱼灯</a>
+                            <a href="http://www.ggrsc.com/788/">迷你音响</a>
+                            <a href="http://www.ggrsc.com/789/">广告手表</a>
+                            <a href="http://www.ggrsc.com/790/">移动电源</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/733/">商务礼仪</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1106/">红丝带</a>
+                            <a href="http://www.ggrsc.com/1107/">挂绳</a>
+                            <a href="http://www.ggrsc.com/760/">金银卡</a>
+                            <a href="http://www.ggrsc.com/761/">标牌</a>
+                            <a href="http://www.ggrsc.com/762/">广告笔筒</a>
+                            <a href="http://www.ggrsc.com/763/">记事本</a>
+                            <a href="http://www.ggrsc.com/764/">奖杯</a>
+                            <a href="http://www.ggrsc.com/765/">金属奖杯</a>
+                            <a href="http://www.ggrsc.com/766/">公文包</a>
+                            <a href="http://www.ggrsc.com/767/">文件夹</a>
+                            <a href="http://www.ggrsc.com/768/">证件卡套</a>
+                            <a href="http://www.ggrsc.com/769/">会员卡</a>
+                            <a href="http://www.ggrsc.com/770/">名片夹</a>
+                            <a href="http://www.ggrsc.com/771/">钥匙包</a>
+                            <a href="http://www.ggrsc.com/772/">贵宾卡</a>
+                            <a href="http://www.ggrsc.com/773/">USB产品</a>
+                            <a href="http://www.ggrsc.com/774/">广告U盘</a>
+                            <a href="http://www.ggrsc.com/775/">名片架</a>
+                            <a href="http://www.ggrsc.com/776/">广告台灯</a>
+                            <a href="http://www.ggrsc.com/777/">水晶工艺品</a>
+                            <a href="http://www.ggrsc.com/778/">多功能计算器</a>
+                            <a href="http://www.ggrsc.com/779/">青花商务套装</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/735/">娱乐喜庆</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1183/">婚礼装饰连体椅子套</a>
+                            <a href="http://www.ggrsc.com/1184/">灯笼</a>
+                            <a href="http://www.ggrsc.com/1189/">酒店婚庆装饰桌布</a>
+                            <a href="http://www.ggrsc.com/792/">沙滩伞</a>
+                            <a href="http://www.ggrsc.com/796/">广告扑克</a>
+                            <a href="http://www.ggrsc.com/797/">广告彩旗</a>
+                            <a href="http://www.ggrsc.com/798/">充气拱门</a>
+                            <a href="http://www.ggrsc.com/799/">广告气球</a>
+                            <a href="http://www.ggrsc.com/800/">广告地垫</a>
+                            <a href="http://www.ggrsc.com/801/">广告对联</a>
+                            <a href="http://www.ggrsc.com/802/">广告气模</a>
+                            <a href="http://www.ggrsc.com/803/">台历挂历</a>
+                            <a href="http://www.ggrsc.com/804/">高档帐篷</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/737/">茶具杯类</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1135/">太空杯</a>
+                            <a href="http://www.ggrsc.com/1188/">一次性塑料杯</a>
+                            <a href="http://www.ggrsc.com/814/">不锈钢杯</a>
+                            <a href="http://www.ggrsc.com/815/">玻璃杯</a>
+                            <a href="http://www.ggrsc.com/816/">精品瓷器</a>
+                            <a href="http://www.ggrsc.com/817/">其他礼品杯</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/1070/">厨具电器</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/284/">咖啡壶</a>
+                            <a href="http://www.ggrsc.com/285/">开水煲</a>
+                            <a href="http://www.ggrsc.com/286/">牙签筒</a>
+                            <a href="http://www.ggrsc.com/287/">厨房秤</a>
+                            <a href="http://www.ggrsc.com/288/">料理机</a>
+                            <a href="http://www.ggrsc.com/289/">豆浆机</a>
+                            <a href="http://www.ggrsc.com/290/">点火枪</a>
+                            <a href="http://www.ggrsc.com/291/">不锈钢盆</a>
+                            <a href="http://www.ggrsc.com/292/">广告果盘</a>
+                            <a href="http://www.ggrsc.com/293/">家用锅</a>
+                            <a href="http://www.ggrsc.com/294/">广告饭盒</a>
+                            <a href="http://www.ggrsc.com/295/">创意厨具</a>
+                            <a href="http://www.ggrsc.com/296/">紫砂锅</a>
+                            <a href="http://www.ggrsc.com/297/">厨房套刀</a>
+                            <a href="http://www.ggrsc.com/298/">广告调味盒</a>
+                            <a href="http://www.ggrsc.com/299/">煮蛋器</a>
+                            <a href="http://www.ggrsc.com/300/">广告套碗</a>
+                            <a href="http://www.ggrsc.com/301/">旅游套装餐叉</a>
+                            <a href="http://www.ggrsc.com/302/">电热锅</a>
+                            <a href="http://www.ggrsc.com/303/">电炖蛊</a>
+                            <a href="http://www.ggrsc.com/304/">苏泊尔压力锅</a>
+                            <a href="http://www.ggrsc.com/305/">电饭锅</a>
+                            <a href="http://www.ggrsc.com/306/">储米箱</a>
+                            <a href="http://www.ggrsc.com/307/">电饼铛</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/1071/">家居用品</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1097/">户外桌椅</a>
+                            <a href="http://www.ggrsc.com/1139/">广告屏风</a>
+                            <a href="http://www.ggrsc.com/398/">折叠椅</a>
+                            <a href="http://www.ggrsc.com/399/">毛巾</a>
+                            <a href="http://www.ggrsc.com/400/">健身器材</a>
+                            <a href="http://www.ggrsc.com/401/">体重秤</a>
+                            <a href="http://www.ggrsc.com/402/">果盘</a>
+                            <a href="http://www.ggrsc.com/403/">卫浴用品</a>
+                            <a href="http://www.ggrsc.com/404/">烘鞋器</a>
+                            <a href="http://www.ggrsc.com/405/">杂物架</a>
+                            <a href="http://www.ggrsc.com/406/">纸巾湿巾</a>
+                            <a href="http://www.ggrsc.com/407/">电吹风</a>
+                            <a href="http://www.ggrsc.com/408/">按摩棒</a>
+                            <a href="http://www.ggrsc.com/409/">电动剃须刀</a>
+                            <a href="http://www.ggrsc.com/410/">打气筒</a>
+                            <a href="http://www.ggrsc.com/411/">节能台灯</a>
+                            <a href="http://www.ggrsc.com/412/">电动旋风扫</a>
+                            <a href="http://www.ggrsc.com/413/">纸巾筒</a>
+                            <a href="http://www.ggrsc.com/414/">广告抱枕</a>
+                            <a href="http://www.ggrsc.com/415/">空气净化器</a>
+                            <a href="http://www.ggrsc.com/416/">工具包</a>
+                            <a href="http://www.ggrsc.com/417/">床上用品</a>
+                            <a href="http://www.ggrsc.com/418/">车载软体冰箱</a>
+                            <a href="http://www.ggrsc.com/419/">热水袋</a>
+                            <a href="http://www.ggrsc.com/420/">清香剂</a>
+                            <a href="http://www.ggrsc.com/421/">广告杯垫</a>
+                            <a href="http://www.ggrsc.com/422/">好神拖</a>
+                            <a href="http://www.ggrsc.com/423/">家用工具箱</a>
+                            <a href="http://www.ggrsc.com/424/">日化用品</a>
+                            <a href="http://www.ggrsc.com/425/">扫地机</a>
+                            <a href="http://www.ggrsc.com/1182/">餐具</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/1072/">服饰包袋类</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/28/">工作服</a>
+                            <a href="http://www.ggrsc.com/29/">购物篮</a>
+                            <a href="http://www.ggrsc.com/30/">礼品腰带</a>
+                            <a href="http://www.ggrsc.com/31/">广告衫</a>
+                            <a href="http://www.ggrsc.com/32/">草莓包</a>
+                            <a href="http://www.ggrsc.com/33/">广告纸袋</a>
+                            <a href="http://www.ggrsc.com/216/">广告包</a>
+                            <a href="http://www.ggrsc.com/217/">围裙</a>
+                            <a href="http://www.ggrsc.com/224/">广告钱包</a>
+                            <a href="http://www.ggrsc.com/225/">吊灯</a>
+                            <a href="http://www.ggrsc.com/226/">雨衣</a>
+                            <a href="http://www.ggrsc.com/227/">广告口罩</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/1073/">高档礼品</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1129/">地球仪</a>
+                            <a href="http://www.ggrsc.com/1130/">鼎</a>
+                            <a href="http://www.ggrsc.com/1131/">塔</a>
+                            <a href="http://www.ggrsc.com/1132/">领航舵</a>
+                            <a href="http://www.ggrsc.com/1133/">丝绸画</a>
+                            <a href="http://www.ggrsc.com/1194/">活性炭工艺品</a>
+                            <a href="http://www.ggrsc.com/426/">料理机</a>
+                            <a href="http://www.ggrsc.com/427/">水晶产品</a>
+                            <a href="http://www.ggrsc.com/428/">高档咖啡壶</a>
+                            <a href="http://www.ggrsc.com/429/">紫砂锅</a>
+                            <a href="http://www.ggrsc.com/430/">数码相框</a>
+                            <a href="http://www.ggrsc.com/431/">骨瓷套碗碟</a>
+                            <a href="http://www.ggrsc.com/432/">开水煲</a>
+                            <a href="http://www.ggrsc.com/433/">精品瓷器</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/1074/">保健按摩系列</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/34/">足疗机</a>
+                            <a href="http://www.ggrsc.com/45/">足浴盆</a>
+                            <a href="http://www.ggrsc.com/46/">按摩拖鞋</a>
+                            <a href="http://www.ggrsc.com/47/">足底按摩毯</a>
+                            <a href="http://www.ggrsc.com/48/">按摩器</a>
+                            <a href="http://www.ggrsc.com/49/">按摩靠垫</a>
+                            <a href="http://www.ggrsc.com/50/">热磁疗按摩器</a>
+                            <a href="http://www.ggrsc.com/1053/">按摩椅</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/1075/">新奇家居礼品</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/51/">五合一厨宝</a>
+                            <a href="http://www.ggrsc.com/53/">西服套装</a>
+                            <a href="http://www.ggrsc.com/54/">跳舞毯</a>
+                            <a href="http://www.ggrsc.com/55/">变色魔术球</a>
+                            <a href="http://www.ggrsc.com/56/">魔术盒系列</a>
+                            <a href="http://www.ggrsc.com/57/">广告牙刷架</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/1054/">其他礼品</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1181/">其他</a>
+                            <a href="http://www.ggrsc.com/1055/">摩车电动车广告品</a>
+                            <a href="http://www.ggrsc.com/1056/">抽奖乒乓球</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/731/"><img src="http://img.ggrsc.com/goods_class/05330571979249665.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/733/"><img src="http://img.ggrsc.com/goods_class/05330571979264847.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li cat_id="959" class="odd">
+      <div class="class">
+      <span class="arrow"></span>
+                <span class="ico" style="background-image:url(http://img.ggrsc.com/goods_class/04849345975757419.png)"></span>
+                                    <h4><a href="http://www.ggrsc.com/959/">办公设备与耗材</a></h4>
+	               </div>
+      <div class="sub-class" cat_menu_id="959">
+        <div class="sub-class-content">
+          <div class="recommend-class">
+                                    <span><a href="http://www.ggrsc.com/972/" title="复印机">复印机</a></span>
+                        <span><a href="http://www.ggrsc.com/974/" title="电话机">电话机</a></span>
+                        <span><a href="http://www.ggrsc.com/986/" title="扫描仪">扫描仪</a></span>
+                        <span><a href="http://www.ggrsc.com/992/" title="裁切机">裁切机</a></span>
+                        <span><a href="http://www.ggrsc.com/994/" title="打孔机">打孔机</a></span>
+                        <span><a href="http://www.ggrsc.com/995/" title="折页机">折页机</a></span>
+                        <span><a href="http://www.ggrsc.com/977/" title="硒鼓">硒鼓</a></span>
+                        <span><a href="http://www.ggrsc.com/980/" title="粉盒">粉盒</a></span>
+                                  </div>
+                              <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/960/">办公设备</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1078/">切卡机</a>
+                            <a href="http://www.ggrsc.com/1105/">胶装机</a>
+                            <a href="http://www.ggrsc.com/885/">覆膜机</a>
+                            <a href="http://www.ggrsc.com/968/">激光打印机</a>
+                            <a href="http://www.ggrsc.com/969/">喷墨打印机</a>
+                            <a href="http://www.ggrsc.com/970/">针式打印机</a>
+                            <a href="http://www.ggrsc.com/971/">多功能一体机</a>
+                            <a href="http://www.ggrsc.com/972/">复印机</a>
+                            <a href="http://www.ggrsc.com/973/">传真机</a>
+                            <a href="http://www.ggrsc.com/974/">电话机</a>
+                            <a href="http://www.ggrsc.com/975/">投影仪</a>
+                            <a href="http://www.ggrsc.com/976/">碎纸机</a>
+                            <a href="http://www.ggrsc.com/986/">扫描仪</a>
+                            <a href="http://www.ggrsc.com/987/">考勤机</a>
+                            <a href="http://www.ggrsc.com/988/">点钞机</a>
+                            <a href="http://www.ggrsc.com/989/">绘图机</a>
+                            <a href="http://www.ggrsc.com/990/">分页机</a>
+                            <a href="http://www.ggrsc.com/991/">过塑机</a>
+                            <a href="http://www.ggrsc.com/992/">裁切机</a>
+                            <a href="http://www.ggrsc.com/993/">装订机</a>
+                            <a href="http://www.ggrsc.com/994/">打孔机</a>
+                            <a href="http://www.ggrsc.com/995/">折页机</a>
+                            <a href="http://www.ggrsc.com/1009/">封装机</a>
+                            <a href="http://www.ggrsc.com/1199/">其他设备</a>
+                                        </dd>
+          </dl>
+                    <dl>
+            <dt>
+                           <h3><a href="http://www.ggrsc.com/961/">办公耗材</a></h3>
+                          </dt>
+            <dd class="goods-class">
+                                          <a href="http://www.ggrsc.com/1104/">小铣刀</a>
+                            <a href="http://www.ggrsc.com/1118/">烫金纸</a>
+                            <a href="http://www.ggrsc.com/1119/">金箔名片纸</a>
+                            <a href="http://www.ggrsc.com/1121/">热熔胶</a>
+                            <a href="http://www.ggrsc.com/874/">切纸刀</a>
+                            <a href="http://www.ggrsc.com/977/">硒鼓</a>
+                            <a href="http://www.ggrsc.com/978/">墨盒墨水</a>
+                            <a href="http://www.ggrsc.com/980/">粉盒</a>
+                            <a href="http://www.ggrsc.com/981/">皮纹纸</a>
+                            <a href="http://www.ggrsc.com/982/">复印纸</a>
+                            <a href="http://www.ggrsc.com/983/">传真纸</a>
+                            <a href="http://www.ggrsc.com/984/">电脑打印纸</a>
+                            <a href="http://www.ggrsc.com/985/">彩色复印纸</a>
+                            <a href="http://www.ggrsc.com/996/">相片纸</a>
+                            <a href="http://www.ggrsc.com/997/">喷墨打印纸</a>
+                            <a href="http://www.ggrsc.com/998/">铜版纸</a>
+                            <a href="http://www.ggrsc.com/999/">彩喷纸</a>
+                            <a href="http://www.ggrsc.com/1000/">绘图纸</a>
+                            <a href="http://www.ggrsc.com/1001/">全透纸</a>
+                            <a href="http://www.ggrsc.com/1002/">不干胶打印纸</a>
+                            <a href="http://www.ggrsc.com/1003/">彩激纸</a>
+                            <a href="http://www.ggrsc.com/1004/">彩色卡纸</a>
+                            <a href="http://www.ggrsc.com/1005/">装订夹条</a>
+                            <a href="http://www.ggrsc.com/1006/">装订胶圈</a>
+                            <a href="http://www.ggrsc.com/1007/">装订透片</a>
+                            <a href="http://www.ggrsc.com/1008/">塑封膜</a>
+                                        </dd>
+          </dl>
+                            </div>
+        <div class="sub-class-right">
+                    
+          <div class="adv-promotions">
+                    <a target="_blank" href="http://www.ggrsc.com/960/"><img src="http://img.ggrsc.com/goods_class/05330572786734553.jpg"></a>
+                              <a target="_blank" href="http://www.ggrsc.com/961/"><img src="http://img.ggrsc.com/goods_class/05330572786753820.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+          </ul>
+</div>
+  </div>
+  <ul class="site-menu">
+    <li><a href="http://www.ggrsc.com" ><span>首页</span></a></li>
+        <!--<li><a href="http://www.ggrsc.com/brand.html" > 品牌</a></li>
+	<li><a href="http://www.ggrsc.com/promotion.html" >疯抢</a></li>-->
+    
+     
+                     <li><a
+         target="_blank" href="/index.php?act=special&amp;op=good_act">特价商品</a></li>
+                        <li><a
+         target="_blank" href="http://www.ggrsc.com/1/">标示标牌</a></li>
+                        <li><a
+         target="_blank" href="http://www.ggrsc.com/530/">展览展示</a></li>
+                <li><a
+         target="_blank" href="http://www.ggrsc.com/308/">喷绘写真</a></li>
+                <li><a
+         target="_blank" href="http://www.ggrsc.com/825/">商务印刷</a></li>
+                                                <li><a
+         target="_blank" href="/school/">广告人商学院</a></li>
+                <li><a href="http://www.ggrsc.com/DP-0-0-0-0.html" > 店铺</a></li>
+	<!--
+	<li><a href="http://www.ggrsc.com/index.php?act=hangye_list&op=index&id=1" > 行业商品划分</a></li>
+	-->
+	
+  </ul>
+</nav>
+</div><div class="nch-breadcrumb-layout">
+    <div class="nch-breadcrumb wrapper"><i class="icon-home"></i>
+            <span><a href="http://www.ggrsc.com">首页</a></span><span class="arrow">></span>
+                <span><a href="http://www.ggrsc.com/3/">工艺字</a></span><span class="arrow">></span>
+                <span><a href="http://www.ggrsc.com/201/">金属字</a></span><span class="arrow">></span>
+                <span><a href="http://www.ggrsc.com/218/">不锈钢字</a></span><span class="arrow">></span>
+                <span>精工不锈钢平面字</span>
+          </div>
+  </div>
+
+
+<link href="http://www.ggrsc.com/templates/default/css/home_goods.css" rel="stylesheet" type="text/css" charset="utf-8">
+
+
+
+<script type="text/javascript" src="http://www.ggrsc.com/resource/js/mz-packed.js" charset="utf-8"></script>
+<div class="wrapper pr">
+  <input type="hidden" id="lockcompare" value="unlock" />
+  <div class="ncs-detail"> 
+   <!-- 焦点图 -->
+	  <div id="ncs-goods-picture" class="ncs-goods-picture">
+      <div class="gallery_wrap">
+        <div class="gallery"><img title="鼠标滚轮向上或向下滚动，能放大或缩小图片哦~" src="http://img.ggrsc.com/store/goods/464/464_05475727034263271_360.jpg" class="cloudzoom" data-cloudzoom="zoomImage: 'http://img.ggrsc.com/store/goods/464/464_05475727034263271_1280.jpg'"> </div>
+      </div>
+      <div class="controller_wrap">
+        <div class="controller">
+          <ul>
+                        <li><img title="鼠标滚轮向上或向下滚动，能放大或缩小图片哦~" class='cloudzoom-gallery' src="http://img.ggrsc.com/store/goods/464/464_05475727034263271_60.jpg" data-cloudzoom="useZoom: '.cloudzoom', image: 'http://img.ggrsc.com/store/goods/464/464_05475727034263271_360.jpg', zoomImage: 'http://img.ggrsc.com/store/goods/464/464_05475727034263271_1280.jpg' " width="60" height="60"></li>
+                         <li><img title="鼠标滚轮向上或向下滚动，能放大或缩小图片哦~" class='cloudzoom-gallery' src="http://img.ggrsc.com/store/goods/464/464_05475729084169892_60.jpg" data-cloudzoom="useZoom: '.cloudzoom', image: 'http://img.ggrsc.com/store/goods/464/464_05475729084169892_360.jpg', zoomImage: 'http://img.ggrsc.com/store/goods/464/464_05475729084169892_1280.jpg' " width="60" height="60"></li>
+                         <li><img title="鼠标滚轮向上或向下滚动，能放大或缩小图片哦~" class='cloudzoom-gallery' src="http://img.ggrsc.com/store/goods/464/464_05475729173709527_60.jpg" data-cloudzoom="useZoom: '.cloudzoom', image: 'http://img.ggrsc.com/store/goods/464/464_05475729173709527_360.jpg', zoomImage: 'http://img.ggrsc.com/store/goods/464/464_05475729173709527_1280.jpg' " width="60" height="60"></li>
+                         <li><img title="鼠标滚轮向上或向下滚动，能放大或缩小图片哦~" class='cloudzoom-gallery' src="http://img.ggrsc.com/store/goods/464/464_05475729285709641_60.jpg" data-cloudzoom="useZoom: '.cloudzoom', image: 'http://img.ggrsc.com/store/goods/464/464_05475729285709641_360.jpg', zoomImage: 'http://img.ggrsc.com/store/goods/464/464_05475729285709641_1280.jpg' " width="60" height="60"></li>
+                         <li><img title="鼠标滚轮向上或向下滚动，能放大或缩小图片哦~" class='cloudzoom-gallery' src="http://img.ggrsc.com/store/goods/464/464_05475729339487109_60.jpg" data-cloudzoom="useZoom: '.cloudzoom', image: 'http://img.ggrsc.com/store/goods/464/464_05475729339487109_360.jpg', zoomImage: 'http://img.ggrsc.com/store/goods/464/464_05475729339487109_1280.jpg' " width="60" height="60"></li>
+                       </ul>
+        </div>
+      </div>
+    </div>
+						<!-- //焦点图 -->
+
+    <!-- S 商品基本信息 -->
+    <div class="ncs-goods-summary">
+      <div class="name">
+        <h1>精工不锈钢平面字</h1>
+        <strong>以下为每平方的价格</strong> </div>
+      <div class="ncs-meta">
+                <!-- S 商品参考价格 -->
+        <dl>
+          <dt>市场价格：</dt>
+          <dd class="cost-price"><strong>&yen;140.00</strong></dd>
+        </dl>
+        <!-- E 商品参考价格 --> 
+        <!-- S 商品发布价格 -->
+        <dl>
+          <dt>商城价格：</dt>
+          <dd class="price">
+                        <strong>&yen;125.00</strong>
+                      </dd>
+        </dl>
+        <dl class="rate">
+          <dt>商品评分：</dt>
+          <!-- S 描述相符评分 -->
+          <dd><span class="raty" data-score="4"></span><a href="#ncGoodsRate">共有9条评价</a></dd>
+          <!-- E 描述相符评分 -->
+        </dl>
+        <!-- E 商品发布价格 -->
+                <div class="ncs-goods-code">
+          <p><img src="http://img.ggrsc.com/store/464/22014.png"  title="用商城手机客户端扫描二维码直达商品详情内容"></p>
+          <span class="ncs-goods-code-note"><i></i>客户端扫购有惊喜</span> </div>
+      </div>
+            <!-- S 促销 -->
+            <!-- E 促销 -->
+      
+      <div class="ncs-logistics"><!-- S 物流与运费新布局展示  -->
+                <dl id="ncs-freight" class="ncs-freight">
+          <dt>配&nbsp;&nbsp;送&nbsp;&nbsp;至：</dt>
+          <dd class="ncs-freight_box">
+            <div id="ncs-freight-selector" class="ncs-freight-select">
+              <div class="text">
+                <div>请选择地区</div>
+                <b>∨</b> </div>
+              <div class="content">
+                <div id="ncs-stock" class="ncs-stock" data-widget="tabs">
+                  <div class="mt">
+                    <ul class="tab">
+                      <li data-index="0" data-widget="tab-item" class="curr"><a href="#none" class="hover"><em>请选择</em><i> ∨</i></a></li>
+                    </ul>
+                  </div>
+                  <div id="stock_province_item" data-widget="tab-content" data-area="0">
+                    <ul class="area-list">
+                    </ul>
+                  </div>
+                  <div id="stock_city_item" data-widget="tab-content" data-area="1" style="display: none;">
+                    <ul class="area-list">
+                    </ul>
+                  </div>
+                  <div id="stock_area_item" data-widget="tab-content" data-area="2" style="display: none;">
+                    <ul class="area-list">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <a href="javascript:;" class="close" onclick="$('#ncs-freight-selector').removeClass('hover')">关闭</a> </div>
+            <div id="ncs-freight-prompt"> <strong>有货</strong>
+                            <a  style="color:red;font-size:18px;" href="/member/article-85.html" target="_blank">友情提醒：购买商品不包含运费</a>                          </div>
+          </dd>
+        </dl>
+        <!-- S 物流与运费新布局展示  -->
+                <!-- S 门店自提 -->
+                <!-- E 门店自提 --> 
+      </div>
+      <div class="ncs-key"> 
+        
+        <!-- S 商品规格值-->
+                <!-- E 商品规格值-->
+                      </div>
+            <!-- S 购买数量及库存 -->
+      <div class="ncs-buy">
+                <div class="ncs-figure-input">
+          <input type="text" name="" id="quantity" value="1" size="3" maxlength="6" class="input-text" >
+          <a href="javascript:void(0)" class="increase" nctype="increase">&nbsp;</a> <a href="javascript:void(0)" class="decrease" nctype="decrease">&nbsp;</a> </div>
+        <div class="ncs-point" style="display: none;"><i></i> 
+          <!-- S 库存 --> 
+          <span>您选择的商品库存<strong nctype="goods_stock">99999</strong>件</span> 
+          <!-- E 库存 --> 
+                            </div>
+                
+        <!-- S 提示已选规格及库存不足无法购买 -->
+                <!-- E 提示已选规格及库存不足无法购买 --> 
+        <!-- S 购买按钮 -->
+        <div class="ncs-btn">
+		 <!-- v5.2 限制购买-->
+                              <!-- 加入购物车--> 
+          <a href="javascript:void(0);" nctype="addcart_submit" class="addcart " title="加入购物车"><i class="icon-shopping-cart"></i>加入购物车</a>
+                              <!-- 立即购买--> 
+          <a href="javascript:void(0);" nctype="buynow_submit" class="buynow " title="立即购买">立即购买</a>
+          	   	            <!-- S 加入购物车弹出提示框 -->
+          <div class="ncs-cart-popup">
+            <dl>
+              <dt>成功添加到购物车<a title="关闭" onClick="$('.ncs-cart-popup').css({'display':'none'});">X</a></dt>
+              <dd>购物车共有 <strong id="bold_num"></strong> 种商品 总金额为：<em id="bold_mly" class="saleP"></em></dd>
+              <dd class="btns"><a href="javascript:void(0);" class="ncbtn-mini ncbtn-mint" onClick="location.href='http://www.ggrsc.com/index.php?act=cart'">查看购物车</a> <a href="javascript:void(0);" class="ncbtn-mini" value="" onClick="$('.ncs-cart-popup').css({'display':'none'});">继续购物</a></dd>
+            </dl>
+          </div>
+          <!-- E 加入购物车弹出提示框 --> 
+        </div>
+        <!-- E 购买按钮 --> 
+      </div>
+            <!-- E 购买数量及库存 --> 
+      <!-- S消费者保障服务 -->
+            <!-- E消费者保障服务 --> 
+      <!--E 商品信息 --> 
+    </div>
+    <!-- E 商品图片及收藏分享 -->
+    <div class="ncs-handle"> 
+      <!-- S 分享 --> 
+      <a href="javascript:void(0);" class="share" nc_type="sharegoods" data-param='{"gid":"22014"}'><i></i>分享<span>(<em nc_type="sharecount_22014">0</em>)</span></a> 
+      <!-- S 收藏 --> 
+      <a href="javascript:collect_goods('22014','count','goods_collect');" class="favorite"><i></i>收藏商品<span>(<em nctype="goods_collect">0</em>)</span></a> 
+      <!-- S 对比 --> 
+      <a href="javascript:void(0);" class="compare" nc_type="compare_22014" data-param='{"gid":"22014"}'><i></i>加入对比</a><!-- S 举报 -->
+            <a href="javascript:login_dialog();" title="举&nbsp;报" class="inform"><i></i>举&nbsp;报</a>
+            <!-- End --> </div>
+    
+    <!--S 店铺信息-->
+    <div class="store-info">
+      <style>
+.ncs-info .btns .chat_online, .ncs-info .btns .chat_offline {padding-left:10px;  width:73px;  line-height:21px !important;background: url("http://www.ggrsc.com/chat/templates/default/images/chat_state_01.gif") no-repeat;}
+.ncs-info .btns .chat_online { background-position: 8px 2px;}
+.ncs-info .btns .chat_offline { background-position: 8px -19px;}
+.ncs-info .btns span a:hover { background: url("http://www.ggrsc.com/chat/templates/default/images/chat_state_01.gif") no-repeat 8px 2px;;}
+</style>
+<!--店铺基本信息 S-->
+<div class="ncs-info">
+  <div class="title">
+    <h4><a class="name" title="郑州文彦广告" target="_blank" href="http://www.ggrsc.com/shop-464.html" >郑州文彦广告</a></h4>
+  </div>
+  <div class="content">
+<div class="store-logo"><a title="郑州文彦广告" target="_blank" href="http://www.ggrsc.com/shop-464.html" ><img src="http://img.ggrsc.com/common/default_store_logo.gif" alt="郑州文彦广告"></a></div>
+        <div class="ncs-detail-rate">
+      <ul>
+                <li>
+          <h5>描述</h5>
+          <div class="" title="">4.0<i></i></div>
+        </li>
+                <li>
+          <h5>服务</h5>
+          <div class="" title="">4.0<i></i></div>
+        </li>
+                <li>
+          <h5>物流</h5>
+          <div class="" title="">4.0<i></i></div>
+        </li>
+              </ul>
+    </div>        <dl class="no-border">
+      <dt>公司名称：</dt>
+      <dd></dd>
+    </dl>
+     <dl>
+      <dt>所 在 地：</dt>
+      <dd></dd>
+    </dl>
+                        <div class="btns clearfix"><a href="http://www.ggrsc.com/shop-464.html" class="goto" >进店逛逛</a><a href="javascript:collect_store('464','count','store_collect')" >收藏店铺<span>(<em nctype="store_collect">0</em>)</span></a>
+                   	     </div>
+  </div>
+</div>
+ 
+<script>
+$(function(){
+	var store_id = "464";
+	var goods_id = "22014";
+	var act = "goods";
+	var op  = "index";
+	$.getJSON("index.php?act=show_store&op=ajax_flowstat_record",{store_id:store_id,goods_id:goods_id,act_param:act,op_param:op});
+});
+</script> 
+          <!--E 店铺信息 --> 
+  </div>
+  <div class="clear"></div>
+</div>
+<!-- S 优惠套装 -->
+     <div class="ncs-recommend">
+      <div class="title">
+        <h4>店铺热卖</h4>
+      </div>
+      <div class="content">
+        <ul>
+                              <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-22010.html" target="_blank" title="以下为每平的价格，灯距2.5">冲孔字 5v 冲孔字<em>以下为每平的价格，灯距2.5</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22010.html" target="_blank" title="以下为每平的价格，灯距2.5"><img src="http://img.ggrsc.com/common/loading.gif" data-url="http://img.ggrsc.com/store/goods/464/464_05475719091471091_240.jpg" rel="lazy" alt="冲孔字 5v 冲孔字"/></a></dd>
+              <dd class="goods-price">&yen;145.00</dd>
+            </dl>
+          </li>
+                                        <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-23631.html" target="_blank" title="以下为每平方的价格">平面发光字 20-50cm 不含电源<em>以下为每平方的价格</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-23631.html" target="_blank" title="以下为每平方的价格"><img src="http://img.ggrsc.com/common/loading.gif" data-url="http://img.ggrsc.com/store/goods/464/464_05475758052396876_240.jpg" rel="lazy" alt="平面发光字 20-50cm 不含电源"/></a></dd>
+              <dd class="goods-price">&yen;13.00</dd>
+            </dl>
+          </li>
+                                        <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-22007.html" target="_blank" title="">背发光字<em></em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22007.html" target="_blank" title=""><img src="http://img.ggrsc.com/common/loading.gif" data-url="http://img.ggrsc.com/store/goods/464/464_05475704193133406_240.jpg" rel="lazy" alt="背发光字"/></a></dd>
+              <dd class="goods-price">&yen;235.00</dd>
+            </dl>
+          </li>
+                                                            <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-22006.html" target="_blank" title="以下为每平方的价格">pvc广告字<em>以下为每平方的价格</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22006.html" target="_blank" title="以下为每平方的价格"><img src="http://img.ggrsc.com/common/loading.gif" data-url="http://img.ggrsc.com/store/goods/464/464_05475685145490562_240.jpg" rel="lazy" alt="pvc广告字"/></a></dd>
+              <dd class="goods-price">&yen;45.00</dd>
+            </dl>
+          </li>
+                                        <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-22018.html" target="_blank" title="以下为每平方的价格">树脂字<em>以下为每平方的价格</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22018.html" target="_blank" title="以下为每平方的价格"><img src="http://img.ggrsc.com/common/loading.gif" data-url="http://img.ggrsc.com/store/goods/464/464_05481777840208850_240.jpg" rel="lazy" alt="树脂字"/></a></dd>
+              <dd class="goods-price">&yen;455.00</dd>
+            </dl>
+          </li>
+                            </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="ncs-promotion" id="nc-bundling" style="display:none;"></div>
+<!-- E 优惠套装 -->
+<div id="content" class="ncs-goods-layout expanded" >
+  <div class="ncs-goods-main" id="main-nav-holder">
+    <div class="tabbar pngFix" id="main-nav">
+      <div class="ncs-goods-title-nav">
+        <ul id="categorymenu">
+          <li class="current"><a id="tabGoodsIntro" href="#content">商品详情</a></li>
+                    <li><a id="tabGoodsRate" href="#content">商品评价<em>(9)</em></a></li>
+          <li><a id="tabGoodsTraded" href="#content">销售记录<em>(354)</em></a></li>
+          <li><a id="tabGuestbook" href="#content">购买咨询</a></li>
+        </ul>
+        <div class="switch-bar"><a href="javascript:void(0)" id="fold">&nbsp;</a></div>
+      </div>
+    </div>
+    <div class="ncs-intro">
+      <div class="content bd" id="ncGoodsIntro">
+                <ul class="nc-goods-sort" style="border-bottom:0;">
+          	                              </ul>
+                <div class="ncs-goods-info-content"><div class="default"><img src="http://img.ggrsc.com/store/goods/464/464_05478283719938904_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05478285812676337_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05478285904987347_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05478285943078677_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05478286034601484_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05478286188790518_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05478294443847503_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05478294533362740_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05478294621892495_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05478279565139453_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05478279604036631_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05478121610270640_1280.jpg" alt="image" /><img src="http://img.ggrsc.com/store/goods/464/464_05476431417743917_1280.jpg" alt="image" /></div></div>
+      </div>
+    </div>
+        <div class="ncs-comment">
+      <div class="ncs-goods-title-bar hd">
+        <h4><a href="javascript:void(0);">商品评价</a></h4>
+      </div>
+      <div class="ncs-goods-info-content bd" id="ncGoodsRate">
+        <div class="top">
+          <div class="rate">
+            <p><strong>55</strong><sub>%</sub>好评</p>
+            <span>共有9人参与评分</span></div>
+          <div class="percent">
+            <dl>
+              <dt>好评<em>(55%)</em></dt>
+              <dd><i style="width: 55%"></i></dd>
+            </dl>
+            <dl>
+              <dt>中评<em>(44%)</em></dt>
+              <dd><i style="width: 44%"></i></dd>
+            </dl>
+            <dl>
+              <dt>差评<em>(0%)</em></dt>
+              <dd><i style="width: 0%"></i></dd>
+            </dl>
+          </div>
+          <div class="btns"><span>您可对已购商品进行评价</span>
+            <p><a href="http://www.ggrsc.com/index.php?act=member_order&op=index" class="ncbtn ncbtn-grapefruit" target="_blank"><i class="icon-comment-alt"></i>评价商品</a></p>
+          </div>
+        </div>
+        <div class="ncs-goods-title-nav">
+          <ul id="comment_tab">
+            <li data-type="all" class="current"><a href="javascript:void(0);">商品评价(9)</a></li>
+            <li data-type="1"><a href="javascript:void(0);">好评(5)</a></li>
+            <li data-type="2"><a href="javascript:void(0);">中评(4)</a></li>
+            <li data-type="3"><a href="javascript:void(0);">差评(0)</a></li>
+            <li data-type="4"><a href="javascript:void(0);">有图(0)</a></li>
+          </ul>
+        </div>
+        <!-- 商品评价内容部分 -->
+        <div id="goodseval" class="ncs-commend-main"></div>
+      </div>
+    </div>
+    <div class="ncg-salelog">
+      <div class="ncs-goods-title-bar hd">
+        <h4><a href="javascript:void(0);">销售记录</a></h4>
+      </div>
+      <div class="ncs-goods-info-content bd" id="ncGoodsTraded">
+        <div class="top">
+          <div class="price">商城价格<strong>125.00</strong>元<span>购买的价格不同可能是由于店铺往期促销活动引起的，详情可以咨询卖家</span></div>
+        </div>
+        <!-- 成交记录内容部分 -->
+        <div id="salelog_demo" class="ncs-loading"> </div>
+      </div>
+    </div>
+    <div class="ncs-consult">
+      <div class="ncs-goods-title-bar hd">
+        <h4><a href="javascript:void(0);">购买咨询</a></h4>
+      </div>
+      <div class="ncs-goods-info-content bd" id="ncGuestbook"> 
+        <!-- 咨询留言内容部分 -->
+        <div id="consulting_demo" class="ncs-loading"> </div>
+      </div>
+    </div>
+        <div class="ncs-recommend">
+      <div class="title">
+        <h4>推荐商品</h4>
+      </div>
+      <div class="content">
+        <ul>
+                              <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-22010.html" target="_blank" title="以下为每平的价格，灯距2.5">冲孔字 5v 冲孔字<em>以下为每平的价格，灯距2.5</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22010.html" target="_blank" title="以下为每平的价格，灯距2.5"><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475719091471091_240.jpg" alt="冲孔字 5v 冲孔字"/></a></dd>
+              <dd class="goods-price">&yen;145.00</dd>
+            </dl>
+          </li>
+                                        <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-23631.html" target="_blank" title="以下为每平方的价格">平面发光字 20-50cm 不含电源<em>以下为每平方的价格</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-23631.html" target="_blank" title="以下为每平方的价格"><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475758052396876_240.jpg" alt="平面发光字 20-50cm 不含电源"/></a></dd>
+              <dd class="goods-price">&yen;13.00</dd>
+            </dl>
+          </li>
+                                        <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-22007.html" target="_blank" title="">背发光字<em></em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22007.html" target="_blank" title=""><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475704193133406_240.jpg" alt="背发光字"/></a></dd>
+              <dd class="goods-price">&yen;235.00</dd>
+            </dl>
+          </li>
+                                                            <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-22006.html" target="_blank" title="以下为每平方的价格">pvc广告字<em>以下为每平方的价格</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22006.html" target="_blank" title="以下为每平方的价格"><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475685145490562_240.jpg" alt="pvc广告字"/></a></dd>
+              <dd class="goods-price">&yen;45.00</dd>
+            </dl>
+          </li>
+                                        <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-22018.html" target="_blank" title="以下为每平方的价格">树脂字<em>以下为每平方的价格</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22018.html" target="_blank" title="以下为每平方的价格"><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05481777840208850_240.jpg" alt="树脂字"/></a></dd>
+              <dd class="goods-price">&yen;455.00</dd>
+            </dl>
+          </li>
+                            </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+      </div>
+  <div class="ncs-sidebar">
+    <div class="ncs-message-bar">
+  <div class="default">
+    <h5>郑州文彦广告</h5>
+    <span member_id="10678"></span>
+          </div>
+  </div>
+    <div class="ncs-sidebar-container ncs-class-bar"><div class="title">
+    <h4>店铺二维码</h4>
+  </div><div class="content"><img src="http://img.ggrsc.com/store/464/464_store.png" class="qr_code_img" title="店铺原始地http://www.ggrsc.com/shop_view-464-0-0-0-0-0.html"></div></div>
+<div class="ncs-sidebar-container ncs-class-bar">
+  <div class="title">
+    <h4>商品分类</h4>
+  </div>
+  <div class="content">
+    <p><span><a href="http://www.ggrsc.com/shop_view-464-0-1-2-0-0.html">按新品</a></span><span><a href="http://www.ggrsc.com/shop_view-464-0-2-2-0-0.html">按价格</a></span><span><a href="http://www.ggrsc.com/shop_view-464-0-3-2-0-0.html">按销量</a></span><span><a href="http://www.ggrsc.com/shop_view-464-0-5-2-0-0.html">按人气</a></span></p>
+    <div class="ncs-search">
+      <form id="" name="searchShop" method="get" action="index.php" >
+        <input type="hidden" name="act" value="show_store" />
+        <input type="hidden" name="op" value="goods_all" />
+        <input type="hidden" name="store_id" value="464" />
+        <input type="text" class="text w120" name="inkeyword" value="" placeholder="搜索店内商品">
+        <a href="javascript:document.searchShop.submit();" class="ncbtn">搜索</a>
+      </form>
+    </div><div style="clear:both"></div>
+    <ul class="shop_nav">
+    <li><i></i><a href="http://www.ggrsc.com/shop_view-464-0-0-0-209-0.html">PVC字</a></li>
+    <li><i></i><a href="http://www.ggrsc.com/shop_view-464-0-0-0-208-0.html">发光字</a></li>
+    <li><i></i><a href="http://www.ggrsc.com/shop_view-464-0-0-0-1098-0.html">包边字</a></li>
+    <li><i></i><a href="http://www.ggrsc.com/shop_view-464-0-0-0-1099-0.html">冲孔字</a></li>
+    <li><i></i><a href="http://www.ggrsc.com/shop_view-464-0-0-0-218-0.html">不锈钢字</a></li>
+    <li><i></i><a href="http://www.ggrsc.com/shop_view-464-0-0-0-214-0.html">迷你字</a></li>
+    <li><i></i><a href="http://www.ggrsc.com/shop_view-464-0-0-0-213-0.html">环氧树脂字</a></li>
+    <li><i></i><a href="http://www.ggrsc.com/shop_view-464-0-0-0-220-0.html">钛金字</a></li>
+  </ul>
+   <!-- <ul class="ncs-submenu">
+      <li><span class="ico-none"><em>-</em></span><a href="http://www.ggrsc.com/shop_view-464-0-0-0-0-0.html">全部商品</a></li>
+          </ul>-->
+    
+  </div>
+</div>
+
+<div class="ncs-sidebar-container ncs-class-bar"><div class="title"><h4>商家地图</h4></div>
+<div class="content"><div  id="mapclickshow">
+<img src="/data/upload/editor/map.jpg" class="def">
+<div class="ncs-info-map" id="map_container" style="width:208px;height:154px;"></div>
+</div>
+</div></div>
+
+
+<script type="text/javascript">
+var cityName = "";
+var address = "";
+var store_name = ""; 
+function initialize() {
+	map = new BMap.Map("map_container");
+	localCity = new BMap.LocalCity();
+	
+	map.enableScrollWheelZoom(); 
+	localCity.get(function(cityResult){
+	  if (cityResult) {
+	  	var level = cityResult.level;
+	  	if (level < 13) level = 13;
+	    map.centerAndZoom(cityResult.center, level);
+	    cityResultName = cityResult.name;
+	    if (cityResultName.indexOf(cityName) >= 0) cityName = cityResult.name;
+	    	    	getPoint();
+	    	  }
+	});
+}
+ 
+function loadScript() {
+	var script = document.createElement("script");
+	script.src = "http://api.map.baidu.com/api?v=1.2&callback=initialize";
+	document.body.appendChild(script);
+}
+function getPoint(){
+	var myGeo = new BMap.Geocoder();
+	myGeo.getPoint(address, function(point){
+	  if (point) {
+	    setPoint(point);
+	  }
+	}, cityName);
+}
+function setPoint(point){
+	  if (point) {
+	    map.centerAndZoom(point, 16);
+	    var marker = new BMap.Marker(point);
+	    map.addOverlay(marker);
+	  }
+}
+
+// 当鼠标放在店铺地图上再加载百度地图。
+$(function(){
+	$('#mapclickshow').one('mouseover',function(){
+		$(this).find('.def').hide();loadScript();
+		
+	});
+	$('#mapclickshow').one('click',function(){
+		$(this).find('.def').hide();loadScript();
+	});
+});
+</script>
+
+
+            
+     <div class="ncs-sidebar-container hao-look-look">
+      <div class="title">
+        <h4>看了又看</h4>
+      </div>
+      <div class="content">
+        <ul>
+          <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-23632.html" target="_blank" title="平面发光字 51-80cm 不含电源">平面发光字 51-80cm 不含电源<em>以下为每平方的价格</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-23632.html" target="_blank" title="以下为每平方的价格"><img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475758052396876_240.jpg"/></a></dd>
+              <dd class="goods-price">&yen;140.00</dd>
+            </dl>
+          </li>
+                    <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-22011.html" target="_blank" title="冲孔字 12v 冲孔字">冲孔字 12v 冲孔字<em>以下为每平的价格，灯距2.5</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22011.html" target="_blank" title="以下为每平方的价格"><img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475719091471091_240.jpg"/></a></dd>
+              <dd class="goods-price">&yen;165.00</dd>
+            </dl>
+          </li>
+                    <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-22009.html" target="_blank" title="不锈钢勾边字">不锈钢勾边字<em>以下为每平的价格</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22009.html" target="_blank" title="以下为每平方的价格"><img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475709519980210_240.jpg"/></a></dd>
+              <dd class="goods-price">&yen;215.00</dd>
+            </dl>
+          </li>
+                    <li>
+            <dl>
+              <dt class="goods-name"><a href="http://www.ggrsc.com/item-22013.html" target="_blank" title="冲孔字 七彩 冲孔字">冲孔字 七彩 冲孔字<em>以下为每平的价格，灯距2.5</em></a></dt>
+              <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22013.html" target="_blank" title="以下为每平方的价格"><img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475719091471091_240.jpg"/></a></dd>
+              <dd class="goods-price">&yen;450.00</dd>
+            </dl>
+          </li>
+                  </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="ncs-sidebar-container ncs-top-bar">
+  <div class="title">
+    <h4>商品排行</h4>
+  </div>
+  <div class="content">
+    <ul class="ncs-top-tab pngFix">
+      <li id="hot_sales_tab" class="current"><a href="http://www.ggrsc.com/shop_view-464-0-3-2-0-0.html">热销TOP5</a></li>
+      <li id="hot_collect_tab"><a href="http://www.ggrsc.com/shop_view-464-0-4-2-0-0.html">人气TOP5</a></li>
+    </ul>
+    <div id="hot_sales_list" class="ncs-top-panel">
+            <ol>
+                <li>
+          <dl>
+            <dt><a href="http://www.ggrsc.com/item-23631.html">平面发光字 20-50cm 不含电源</a></dt>
+            <dd class="goods-pic"><a href="http://www.ggrsc.com/item-23631.html"><span class="thumb size60"><i></i><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475758052396876_60.jpg"  onload="javascript:DrawImage(this,60,60);"></span></a>
+              <p><span class="thumb size100"><i></i><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475758052396876_240.jpg" onload="javascript:DrawImage(this,100,100);" title="平面发光字 20-50cm 不含电源"><big></big><small></small></span></p>
+            </dd>
+            <dd class="price pngFix">13.00</dd>
+            <dd class="selled pngFix">售出：<strong>1619</strong>笔</dd>
+          </dl>
+        </li>
+                <li>
+          <dl>
+            <dt><a href="http://www.ggrsc.com/item-22006.html">pvc广告字</a></dt>
+            <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22006.html"><span class="thumb size60"><i></i><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475685145490562_60.jpg"  onload="javascript:DrawImage(this,60,60);"></span></a>
+              <p><span class="thumb size100"><i></i><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475685145490562_240.jpg" onload="javascript:DrawImage(this,100,100);" title="pvc广告字"><big></big><small></small></span></p>
+            </dd>
+            <dd class="price pngFix">45.00</dd>
+            <dd class="selled pngFix">售出：<strong>1188</strong>笔</dd>
+          </dl>
+        </li>
+                <li>
+          <dl>
+            <dt><a href="http://www.ggrsc.com/item-22011.html">冲孔字 12v 冲孔字</a></dt>
+            <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22011.html"><span class="thumb size60"><i></i><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475719091471091_60.jpg"  onload="javascript:DrawImage(this,60,60);"></span></a>
+              <p><span class="thumb size100"><i></i><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475719091471091_240.jpg" onload="javascript:DrawImage(this,100,100);" title="冲孔字 12v 冲孔字"><big></big><small></small></span></p>
+            </dd>
+            <dd class="price pngFix">165.00</dd>
+            <dd class="selled pngFix">售出：<strong>460</strong>笔</dd>
+          </dl>
+        </li>
+                <li>
+          <dl>
+            <dt><a href="http://www.ggrsc.com/item-22014.html">精工不锈钢平面字</a></dt>
+            <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22014.html"><span class="thumb size60"><i></i><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475727034263271_60.jpg"  onload="javascript:DrawImage(this,60,60);"></span></a>
+              <p><span class="thumb size100"><i></i><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475727034263271_240.jpg" onload="javascript:DrawImage(this,100,100);" title="精工不锈钢平面字"><big></big><small></small></span></p>
+            </dd>
+            <dd class="price pngFix">125.00</dd>
+            <dd class="selled pngFix">售出：<strong>354</strong>笔</dd>
+          </dl>
+        </li>
+                <li>
+          <dl>
+            <dt><a href="http://www.ggrsc.com/item-22009.html">不锈钢勾边字</a></dt>
+            <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22009.html"><span class="thumb size60"><i></i><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475709519980210_60.jpg"  onload="javascript:DrawImage(this,60,60);"></span></a>
+              <p><span class="thumb size100"><i></i><img src="http://img.ggrsc.com/common/loading.gif" rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475709519980210_240.jpg" onload="javascript:DrawImage(this,100,100);" title="不锈钢勾边字"><big></big><small></small></span></p>
+            </dd>
+            <dd class="price pngFix">215.00</dd>
+            <dd class="selled pngFix">售出：<strong>322</strong>笔</dd>
+          </dl>
+        </li>
+              </ol>
+          </div>
+    <div id="hot_collect_list" class="ncs-top-panel hide">
+            <ol>
+                <li>
+          <dl>
+            <dt><a href="http://www.ggrsc.com/item-22016.html">迷你字</a></dt>
+            <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22016.html" title=""><span class="thumb size60"><i></i> <img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05481778834296650_60.jpg" onload="javascript:DrawImage(this,60,60);"></span></a>
+              <p><span class="thumb size100"><i></i><img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05481778834296650_240.jpg" onload="javascript:DrawImage(this,100,100);" title="迷你字"><big></big><small></small></span></p>
+            </dd>
+            <dd class="price pngFix">452.00</dd>
+            <dd class="collection pngFix">收藏人气：<strong>0</strong></dd>
+          </dl>
+        </li>
+                <li>
+          <dl>
+            <dt><a href="http://www.ggrsc.com/item-22018.html">树脂字</a></dt>
+            <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22018.html" title=""><span class="thumb size60"><i></i> <img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05481777840208850_60.jpg" onload="javascript:DrawImage(this,60,60);"></span></a>
+              <p><span class="thumb size100"><i></i><img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05481777840208850_240.jpg" onload="javascript:DrawImage(this,100,100);" title="树脂字"><big></big><small></small></span></p>
+            </dd>
+            <dd class="price pngFix">455.00</dd>
+            <dd class="collection pngFix">收藏人气：<strong>0</strong></dd>
+          </dl>
+        </li>
+                <li>
+          <dl>
+            <dt><a href="http://www.ggrsc.com/item-22019.html">钛金字</a></dt>
+            <dd class="goods-pic"><a href="http://www.ggrsc.com/item-22019.html" title=""><span class="thumb size60"><i></i> <img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05481758714670686_60.jpg" onload="javascript:DrawImage(this,60,60);"></span></a>
+              <p><span class="thumb size100"><i></i><img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05481758714670686_240.jpg" onload="javascript:DrawImage(this,100,100);" title="钛金字"><big></big><small></small></span></p>
+            </dd>
+            <dd class="price pngFix">155.00</dd>
+            <dd class="collection pngFix">收藏人气：<strong>0</strong></dd>
+          </dl>
+        </li>
+                <li>
+          <dl>
+            <dt><a href="http://www.ggrsc.com/item-23631.html">平面发光字 20-50cm 不含电源</a></dt>
+            <dd class="goods-pic"><a href="http://www.ggrsc.com/item-23631.html" title=""><span class="thumb size60"><i></i> <img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475758052396876_60.jpg" onload="javascript:DrawImage(this,60,60);"></span></a>
+              <p><span class="thumb size100"><i></i><img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475758052396876_240.jpg" onload="javascript:DrawImage(this,100,100);" title="平面发光字 20-50cm 不含电源"><big></big><small></small></span></p>
+            </dd>
+            <dd class="price pngFix">13.00</dd>
+            <dd class="collection pngFix">收藏人气：<strong>0</strong></dd>
+          </dl>
+        </li>
+                <li>
+          <dl>
+            <dt><a href="http://www.ggrsc.com/item-23632.html">平面发光字 51-80cm 不含电源</a></dt>
+            <dd class="goods-pic"><a href="http://www.ggrsc.com/item-23632.html" title=""><span class="thumb size60"><i></i> <img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475758052396876_60.jpg" onload="javascript:DrawImage(this,60,60);"></span></a>
+              <p><span class="thumb size100"><i></i><img src="http://img.ggrsc.com/common/loading.gif"  rel="lazy" data-url="http://img.ggrsc.com/store/goods/464/464_05475758052396876_240.jpg" onload="javascript:DrawImage(this,100,100);" title="平面发光字 51-80cm 不含电源"><big></big><small></small></span></p>
+            </dd>
+            <dd class="price pngFix">140.00</dd>
+            <dd class="collection pngFix">收藏人气：<strong>0</strong></dd>
+          </dl>
+        </li>
+              </ol>
+          </div>
+    <p><a href="http://www.ggrsc.com/shop_view-464-0-0-0-0-0.html">查看本店其他商品</a></p>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //热销排行切换
+        $('#hot_sales_tab').on('mouseenter', function() {
+            $(this).addClass('current');
+            $('#hot_collect_tab').removeClass('current');
+            $('#hot_sales_list').removeClass('hide');
+            $('#hot_collect_list').addClass('hide');
+        });
+        $('#hot_collect_tab').on('mouseenter', function() {
+            $(this).addClass('current');
+            $('#hot_sales_tab').removeClass('current');
+            $('#hot_sales_list').addClass('hide');
+            $('#hot_collect_list').removeClass('hide');
+        });
+		
+		//超出隐藏	
+	var s_size=$(".shop_nav li").size();
+	if(s_size>17){for (var i=16;i<s_size;i++){$('.shop_nav li:eq('+i+')').hide();}
+	$(".shop_nav").append('<li><em></em><a href="javascript:void(0)" id="showmore">显示更多</a></li>');
+	$("#showmore").toggle(function(){
+    for (var i=16;i<s_size;i++){$('.shop_nav li:eq('+i+')').animate({height: 'toggle', opacity: 'toggle'}, "slow");}
+	$("#showmore").html('隐藏更多');
+    },function(){
+    for (var i=16;i<s_size;i++){$('.shop_nav li:eq('+i+')').animate({height: 'toggle', opacity: 'toggle'}, "slow");}
+	$("#showmore").html('显示更多');
+    });
+	}
+		
+		
+		
+    });
+    /** left.php **/
+    // 商品分类
+    function class_list(obj){
+    	var stc_id=$(obj).attr('span_id');
+    	var span_class=$(obj).attr('class');
+    	if(span_class=='ico-block') {
+    		$("#stc_"+stc_id).show();
+    		$(obj).html('<em>-</em>');
+    		$(obj).attr('class','ico-none');
+    	}else{
+    		$("#stc_"+stc_id).hide();
+    		$(obj).html('<em>+</em>');
+    		$(obj).attr('class','ico-block');
+    	}
+    }
+</script> 
+      </div>
+</div>
+</div>
+<form id="buynow_form" method="post" action="http://www.ggrsc.com/index.php">
+  <input id="act" name="act" type="hidden" value="buy" />
+  <input id="op" name="op" type="hidden" value="buy_step1" />
+  <input id="cart_id" name="cart_id[]" type="hidden"/>
+</form>
+<script type="text/javascript" src="http://www.ggrsc.com/data/resource/js/jquery.charCount.js"></script> 
+<script src="http://www.ggrsc.com/data/resource/js/jquery.ajaxContent.pack.js" type="text/javascript"></script> 
+<script src="http://www.ggrsc.com/data/resource/js/sns.js" type="text/javascript" charset="utf-8"></script> 
+<script src="http://www.ggrsc.com/data/resource/js/jquery.F_slider.js" type="text/javascript" charset="utf-8"></script> 
+<script type="text/javascript" src="http://www.ggrsc.com/data/resource/js/waypoints.js"></script> 
+<script type="text/javascript" src="http://www.ggrsc.com/data/resource/js/jquery.raty/jquery.raty.min.js"></script> 
+<script type="text/javascript" src="http://www.ggrsc.com/data/resource/js/jquery.nyroModal/custom.min.js" charset="utf-8"></script>
+<link href="http://www.ggrsc.com/data/resource/js/jquery.nyroModal/styles/nyroModal.css" rel="stylesheet" type="text/css" id="cssfile2" />
+<script type="text/javascript">
+/** 辅助浏览 **/
+
+	//产品图片
+	jQuery(function($){
+	// 放大镜效果 产品图片
+     CloudZoom.quickStart();
+     
+     		    // 图片切换效果
+                $(".controller li").first().addClass('current');
+                $('.controller').find('li').mouseover(function(){
+                $(this).first().addClass("current").siblings().removeClass("current");
+                });
+});
+
+    //收藏分享处下拉操作
+    jQuery.divselect = function(divselectid,inputselectid) {
+      var inputselect = $(inputselectid);
+      $(divselectid).mouseover(function(){
+          var ul = $(divselectid+" ul");
+          ul.slideDown("fast");
+          if(ul.css("display")=="none"){
+              ul.slideDown("fast");
+          }
+      });
+      $(divselectid).live('mouseleave',function(){
+          $(divselectid+" ul").hide();
+      });
+    };
+$(function(){
+	//赠品处滚条
+	$('#ncsGoodsGift').perfectScrollbar({suppressScrollX:true});
+        // 加入购物车
+    $('a[nctype="addcart_submit"]').click(function(){
+    	if (typeof(allow_buy) != 'undefined' && allow_buy === false) return ;
+        addcart(22014, checkQuantity(),'addcart_callback');
+    });
+                // 立即购买
+        $('a[nctype="buynow_submit"]').click(function(){
+        	if (typeof(allow_buy) != 'undefined' && allow_buy === false) return ;
+            buynow(22014,checkQuantity());
+        });
+                // 到货通知
+        //浮动导航  waypoints.js
+    $('#main-nav').waypoint(function(event, direction) {
+        $(this).parent().parent().parent().toggleClass('sticky', direction === "down");
+        event.stopPropagation();
+    });
+
+    // 分享收藏下拉操作
+    $.divselect("#handle-l");
+    $.divselect("#handle-r");
+
+    // 规格选择
+    $('dl[nctype="nc-spec"]').find('a').each(function(){
+		if ($(this).hasClass('gray')) {
+			
+		}else{
+			$(this).click(function(){
+			if ($(this).hasClass('hovered')) {
+				return false;
+			}
+			$(this).parents('ul:first').find('a').removeClass('hovered');
+			$(this).addClass('hovered');
+			checkSpec();
+			});			
+		}
+
+		
+		
+    });
+
+});
+
+function checkSpec() {
+    var spec_param = [{"sign":"","url":"http:\/\/www.ggrsc.com\/item-22014.html"}];
+    var spec = new Array();
+    $('ul[nctyle="ul_sign"]').find('.hovered').each(function(){
+        var data_str = ''; eval('data_str =' + $(this).attr('data-param'));
+        spec.push(data_str.valid);
+    });
+    spec1 = spec.sort(function(a,b){
+        return a-b;
+    });
+    var spec_sign = spec1.join('|');
+    $.each(spec_param, function(i, n){
+        if (n.sign == spec_sign) {
+            window.location.href = n.url;
+        }
+    });
+}
+
+// 验证购买数量
+function checkQuantity(){	
+    var quantity = parseInt($("#quantity").val());
+    if (quantity < 1) {
+        alert("请填写购买数量");
+        $("#quantity").val('1');
+        return false;
+    }
+	    if (quantity < 1) {
+        alert("请填写购买数量");
+        $("#quantity").val('1');
+        return false;
+    }	
+    max = parseInt($('[nctype="goods_stock"]').text());
+            if(quantity > max){
+        alert("库存不足");
+        return false;
+    }
+    return quantity;
+}
+
+// 立即购买js
+function buynow(goods_id,quantity,chain_id,area_id,area_name,area_id_2){
+	login_dialog();
+}
+
+$(function(){
+    //选择地区查看运费
+    $('#transport_pannel>a').click(function(){
+    	var id = $(this).attr('nctype');
+    	if (id=='undefined') return false;
+    	var _self = this,tpl_id = '0';
+	    var url = 'index.php?act=goods&op=calc&rand='+Math.random();
+	    $('#transport_price').css('display','none');
+	    $('#loading_price').css('display','');
+	    $.getJSON(url, {'id':id,'tid':tpl_id}, function(data){
+	    	if (data == null) return false;
+	        if(data != 'undefined') {$('#nc_kd').html('运费：<em>' + data + '</em>元');}else{'卖家承担运费';}
+	        $('#transport_price').css('display','');
+	    	$('#loading_price').css('display','none');
+	        $('#ncrecive').html($(_self).html());
+	    });
+    });
+    $("#nc-bundling").load('index.php?act=goods&op=get_bundling&goods_id=22014', function(){
+        if($(this).html() != '') {
+            $(this).show();
+        }
+    });
+        $("#salelog_demo").load('index.php?act=goods&op=salelog&goods_id=22014&store_id=464&vr=0', function(){
+        // Membership card
+        $(this).find('[nctype="mcard"]').membershipCard({type:'shop'});
+    });
+	$("#consulting_demo").load('index.php?act=goods&op=consulting&goods_id=22014&store_id=464', function(){
+		// Membership card
+		$(this).find('[nctype="mcard"]').membershipCard({type:'shop'});
+	});
+
+/** goods.php **/
+	// 商品内容部分折叠收起侧边栏控制
+	$('#fold').click(function(){
+  		$('.ncs-goods-layout').toggleClass('expanded');
+	});
+	// 商品内容介绍Tab样式切换控制
+	$('#categorymenu').find("li").click(function(){
+		$('#categorymenu').find("li").removeClass('current');
+		$(this).addClass('current');
+	});
+	// 商品详情默认情况下显示全部
+	$('#tabGoodsIntro').click(function(){
+		$('.bd').css('display','');
+		$('.hd').css('display','');
+	});
+	// 点击地图隐藏其他以及其标题栏
+	$('#tabStoreMap').click(function(){
+		$('.bd').css('display','none');
+		$('#ncStoreMap').css('display','');
+		$('.hd').css('display','none');
+	});
+	// 点击评价隐藏其他以及其标题栏
+	$('#tabGoodsRate').click(function(){
+		$('.bd').css('display','none');
+		$('#ncGoodsRate').css('display','');
+		$('.hd').css('display','none');
+	});
+	// 点击成交隐藏其他以及其标题
+	$('#tabGoodsTraded').click(function(){
+		$('.bd').css('display','none');
+		$('#ncGoodsTraded').css('display','');
+		$('.hd').css('display','none');
+	});
+	// 点击咨询隐藏其他以及其标题
+	$('#tabGuestbook').click(function(){
+		$('.bd').css('display','none');
+		$('#ncGuestbook').css('display','');
+		$('.hd').css('display','none');
+	});
+	//商品排行Tab切换
+	$(".ncs-top-tab > li > a").mouseover(function(e) {
+		if (e.target == this) {
+			var tabs = $(this).parent().parent().children("li");
+			var panels = $(this).parent().parent().parent().children(".ncs-top-panel");
+			var index = $.inArray(this, $(this).parent().parent().find("a"));
+			if (panels.eq(index)[0]) {
+				tabs.removeClass("current ").eq(index).addClass("current ");
+				panels.addClass("hide").eq(index).removeClass("hide");
+			}
+		}
+	});
+	//信用评价动态评分打分人次Tab切换
+	$(".ncs-rate-tab > li > a").mouseover(function(e) {
+		if (e.target == this) {
+			var tabs = $(this).parent().parent().children("li");
+			var panels = $(this).parent().parent().parent().children(".ncs-rate-panel");
+			var index = $.inArray(this, $(this).parent().parent().find("a"));
+			if (panels.eq(index)[0]) {
+				tabs.removeClass("current ").eq(index).addClass("current ");
+				panels.addClass("hide").eq(index).removeClass("hide");
+			}
+		}
+	});
+
+//触及显示缩略图
+	$('.goods-pic > .thumb').hover(
+		function(){
+			$(this).next().css('display','block');
+		},
+		function(){
+			$(this).next().css('display','none');
+		}
+	);
+
+	/* 商品购买数量增减js */
+	// 增加
+	$('a[nctype="increase"]').click(function(){
+		num = parseInt($('#quantity').val());
+	    	    		max = parseInt($('[nctype="goods_stock"]').text());
+		if(num < max){
+			$('#quantity').val(num+1);
+		}
+	});
+	//减少
+	$('a[nctype="decrease"]').click(function(){
+		num = parseInt($('#quantity').val());
+		if(num > 1){
+			$('#quantity').val(num-1);
+		}
+	});
+
+    //评价列表
+    $('#comment_tab').on('click', 'li', function() {
+        $('#comment_tab li').removeClass('current');
+        $(this).addClass('current');
+        load_goodseval($(this).attr('data-type'));
+    });
+    load_goodseval('all');
+    function load_goodseval(type) {
+        var url = 'http://www.ggrsc.com/index.php?act=goods&op=comments&goods_id=22014';
+        url += '&type=' + type;
+        $("#goodseval").load(url, function(){
+            $(this).find('[nctype="mcard"]').membershipCard({type:'shop'});
+        });
+    }
+
+    //记录浏览历史
+	$.get("index.php?act=goods&op=addbrowse",{gid:22014});
+	//初始化对比按钮
+	initCompare();
+
+    $('[nctype="show_chain"]').click(function(){
+        _goods_id = $(this).attr('data-goodsid');
+        ajax_form('show_chain', '查看门店', 'index.php?act=goods&op=show_chain&goods_id=' + _goods_id, 640);
+    });
+
+    
+    // 满即送、加价购显示隐藏
+    $('[nctype="show-rule"]').click(function(){
+        $(this).parent().find('[nctype="rule-content"]').show();
+    });
+    $('[nctype="hide-rule"]').click(function(){
+        $(this).parents('[nctype="rule-content"]:first').hide()
+    });
+
+    $('.ncs-buy').bind({
+        mouseover:function(){$(".ncs-point").show();},
+        mouseout:function(){$(".ncs-point").hide();}
+    });
+    
+});
+
+/* 加入购物车后的效果函数 */
+function addcart_callback(data){
+	$('#bold_num').html(data.num);
+    $('#bold_mly').html(price_format(data.amount));
+    $('.ncs-cart-popup').fadeIn('fast');
+}
+
+var $cur_area_list,$cur_tab,next_tab_id = 0,cur_select_area = [],calc_area_id = '',calced_area = [],cur_select_area_ids = [];
+$(document).ready(function(){
+	$("#ncs-freight-selector").hover(function() {
+		//如果店铺没有设置默认显示区域，马上异步请求
+				if (typeof nc_a === "undefined") {
+	 		$.getJSON(SITEURL + "/index.php?act=index&op=json_area&callback=?", function(data) {
+	 			nc_a = data;
+	 			$cur_tab = $('#ncs-stock').find('li[data-index="0"]');
+	 			_loadArea(0);
+	 		});
+		}
+				$(this).addClass("hover");
+		$(this).on('mouseleave',function(){
+			$(this).removeClass("hover");
+		});
+	});
+
+	$('ul[class="area-list"]').on('click','a',function(){
+		$('#ncs-freight-selector').unbind('mouseleave');
+		var tab_id = parseInt($(this).parents('div[data-widget="tab-content"]:first').attr('data-area'));
+		if (tab_id == 0) {cur_select_area = [];cur_select_area_ids = []};
+		if (tab_id == 1 && cur_select_area.length > 1) {
+			cur_select_area.pop();
+			cur_select_area_ids.pop();
+			if (cur_select_area.length > 1) {
+				cur_select_area.pop();
+				cur_select_area_ids.pop();
+			}
+		}
+		next_tab_id = tab_id + 1;
+		var area_id = $(this).attr('data-value');
+		$cur_tab = $('#ncs-stock').find('li[data-index="'+tab_id+'"]');
+		$cur_tab.find('em').html($(this).html());
+		$cur_tab.find('i').html(' ∨');
+		if (tab_id < 2) {
+			calc_area_id = area_id;
+			cur_select_area.push($(this).html());
+			cur_select_area_ids.push(area_id);
+			$cur_tab.find('a').removeClass('hover');
+			$cur_tab.nextAll().remove();
+			if (typeof nc_a === "undefined") {
+    	 		$.getJSON(SITEURL + "/index.php?act=index&op=json_area&callback=?", function(data) {
+    	 			nc_a = data;
+    	 			_loadArea(area_id);
+    	 		});
+			} else {
+				_loadArea(area_id);
+			}
+		} else {
+			//点击第三级，不需要显示子分类
+			if (cur_select_area.length == 3) {
+				cur_select_area.pop();
+				cur_select_area_ids.pop();
+			}
+			cur_select_area.push($(this).html());
+			cur_select_area_ids.push(area_id);
+			$('#ncs-freight-selector > div[class="text"] > div').html(cur_select_area.join(''));
+			$('#ncs-freight-selector').removeClass("hover");
+			_calc();
+		}
+		$('#ncs-stock').find('li[data-widget="tab-item"]').on('click','a',function(){
+			var tab_id = parseInt($(this).parent().attr('data-index'));
+			if (tab_id < 2) {
+				$(this).parent().nextAll().remove();
+				$(this).addClass('hover');
+				$('#ncs-stock').find('div[data-widget="tab-content"]').each(function(){
+					if ($(this).attr("data-area") == tab_id) {
+						$(this).show();
+					} else {
+						$(this).hide();
+					}
+				});
+			}
+		});
+	});
+	function _loadArea(area_id){
+		if (nc_a[area_id] && nc_a[area_id].length > 0) {
+			$('#ncs-stock').find('div[data-widget="tab-content"]').each(function(){
+				if ($(this).attr("data-area") == next_tab_id) {
+					$(this).show();
+					$cur_area_list = $(this).find('ul');
+					$cur_area_list.html('');
+				} else {
+					$(this).hide();
+				}
+			});
+			var areas = [];
+			areas = nc_a[area_id];
+			for (i = 0; i < areas.length; i++) {
+				if (areas[i][1].length > 8) {
+					$cur_area_list.append("<li class='longer-area'><a data-value='" + areas[i][0] + "' href='#none'>" + areas[i][1] + "</a></li>");
+				} else {
+				    $cur_area_list.append("<li><a data-value='" + areas[i][0] + "' href='#none'>" + areas[i][1] + "</a></li>");
+				}
+			}
+			if (area_id > 0){
+				$cur_tab.after('<li data-index="' + (next_tab_id) + '" data-widget="tab-item"><a class="hover" href="#none" ><em>请选择</em><i> ∨</i></a></li>');
+			}
+		} else {
+			//点击第一二级时，已经到了最后一级
+			$cur_tab.find('a').addClass('hover');
+			$('#ncs-freight-selector > div[class="text"] > div').html(cur_select_area);
+			$('#ncs-freight-selector').removeClass("hover");
+			_calc();
+		}
+	}
+	//计算运费，是否配送
+	function _calc() {
+		$.cookie('dregion', cur_select_area_ids.join(' ')+'|'+cur_select_area.join(' '), { expires: 30 });
+				return;
+				var _args = "&tid=0&area_id=" + calc_area_id;
+		if (typeof calced_area[calc_area_id] == 'undefined') {
+			//需要请求配送区域设置
+			$.getJSON(SITEURL + "/index.php?act=goods&op=calc&" + _args + "&myf=0.00&callback=?", function(data){
+				allow_buy = data.total ? true : false;
+				calced_area[calc_area_id] = data.total;
+				if (data.total === false) {
+					$('#ncs-freight-prompt > strong').html('无货').next().remove();
+					$('a[nctype="buynow_submit"]').addClass('no-buynow');
+					$('a[nctype="addcart_submit"]').addClass('no-buynow');
+				} else {
+					$('#ncs-freight-prompt > strong').html('有货 ').next().remove();
+					$('#ncs-freight-prompt > strong').after('<span>' + data.total + '</span>');
+					$('a[nctype="buynow_submit"]').removeClass('no-buynow');
+					$('a[nctype="addcart_submit"]').removeClass('no-buynow');
+				}
+			});	
+		} else {
+			if (calced_area[calc_area_id] === false) {
+				$('#ncs-freight-prompt > strong').html('无货').next().remove();
+				$('a[nctype="buynow_submit"]').addClass('no-buynow');
+				$('a[nctype="addcart_submit"]').addClass('no-buynow');
+			} else {
+				$('#ncs-freight-prompt > strong').html('有货 ').next().remove();
+				$('#ncs-freight-prompt > strong').after('<span>' + calced_area[calc_area_id] + '</span>');
+				$('a[nctype="buynow_submit"]').removeClass('no-buynow');
+				$('a[nctype="addcart_submit"]').removeClass('no-buynow');
+			}
+		}
+	}
+	//如果店铺设置默认显示配送区域
+	});
+</script> 
+<script src="http://www.ggrsc.com/data/resource/js/jquery.lazyload.js"></script>
+<script language="javascript">
+function fade(){$("img[rel='lazy']").each(function(){var $scroTop=$(this).offset();if($scroTop.top<=$(window).scrollTop()+$(window).height()){$(this).hide();$(this).attr("src",$(this).attr("data-url"));$(this).removeAttr("rel");$(this).removeAttr("name");$(this).fadeIn(500)}})}if($("img[rel='lazy']").length>0){$(window).scroll(function(){fade()})}fade();
+$(function() {$("img").lazyload();});
+</script>
+
+<div class="warp-all">   
+  <div class="mod_agree"> 
+    <ul class="mod_agree_con">	
+      
+      <li class="mod_agree_item mod_agree_item1">
+  <a  ><img   src="http://img.ggrsc.com/rec_position/aafda0df33d2a95e6010.png"></a><strong>真品货源</strong><span>正品，优质，放心</span>
+        </li>
+      
+      <li class="mod_agree_item mod_agree_item2">
+        <a  ><img   src="http://img.ggrsc.com/rec_position/f0a5ee0bfc20dd005850.png"></a>        <strong>数据互通</strong><span>网站，商家，消费者</span>
+        </li>
+      <li class="mod_agree_item mod_agree_item3">
+        <a  ><img   src="http://img.ggrsc.com/rec_position/72edb29cc2ad2af46000.png"></a>        <strong>最低价格</strong><span>广告材料同类价格最低</span>
+        </li>
+      <li class="mod_agree_item mod_agree_item4">
+        <a  ><img   src="http://img.ggrsc.com/rec_position/c827005fae642e146280.png"></a>        <strong>担保交易</strong><span>支付宝担保，更安全</span>
+        </li>
+      <li class="mod_agree_item mod_agree_item5">
+        <a  ><img   src="http://img.ggrsc.com/rec_position/3497c1b195bde1928550.png"></a>        <strong>物流配送</strong><span>配送人员负责送货到家</span>
+        </li>
+      <li class="mod_agree_item mod_agree_item6">
+        <a  ><img   src="http://img.ggrsc.com/rec_position/ea3ff5e9bf84afc34800.png"></a>        <strong>最新行情</strong><span>发现市场的最新商品</span>
+        </li>
+      </ul>
+  </div></div>
+<div id="faq">
+  <div class="wrapper">
+        <ul>
+                  <li>
+        <dl class="s1">
+          <dt>
+            买家帮助          </dt>
+                              <dd><a href="http://www.ggrsc.com/member/article-46.html" title="邀请返利"> 邀请返利 </a></dd>
+                    <dd><a href="http://www.ggrsc.com/member/article-44.html" title="常见问题"> 常见问题 </a></dd>
+                    <dd><a href="http://www.ggrsc.com/member/article-43.html" title="会员说明"> 会员说明 </a></dd>
+                    <dd><a href="http://www.ggrsc.com/member/article-42.html" title="用户注册"> 用户注册 </a></dd>
+                            </dl>
+      </li>
+                  <li>
+        <dl class="s2">
+          <dt>
+            支付方式          </dt>
+                              <dd><a href="http://www.ggrsc.com/member/article-63.html" title="转账支付"> 转账支付 </a></dd>
+                    <dd><a href="http://www.ggrsc.com/member/article-62.html" title="支付宝支付"> 支付宝支付 </a></dd>
+                    <dd><a href="http://www.ggrsc.com/member/article-61.html" title="账户余额支付"> 账户余额支付 </a></dd>
+                    <dd><a href="http://www.ggrsc.com/member/article-60.html" title="微信支付"> 微信支付 </a></dd>
+                            </dl>
+      </li>
+                  <li>
+        <dl class="s3">
+          <dt>
+            售后服务          </dt>
+                              <dd><a href="http://www.ggrsc.com/member/article-51.html" title="正品保障"> 正品保障 </a></dd>
+                    <dd><a href="http://www.ggrsc.com/member/article-50.html" title="退款说明"> 退款说明 </a></dd>
+                    <dd><a href="http://www.ggrsc.com/member/article-49.html" title="退换货政策"> 退换货政策 </a></dd>
+                    <dd><a href="http://www.ggrsc.com/member/article-48.html" title="退换货流程"> 退换货流程 </a></dd>
+                    <dd><a href="http://www.ggrsc.com/member/article-47.html" title="售后客服"> 售后客服 </a></dd>
+                            </dl>
+      </li>
+                  <li>
+        <dl class="s4">
+          <dt>
+            配送服务          </dt>
+                              <dd><a href="http://www.ggrsc.com/member/article-54.html" title="物流查询"> 物流查询 </a></dd>
+                    <dd><a href="http://www.ggrsc.com/member/article-53.html" title="签收验货"> 签收验货 </a></dd>
+                            </dl>
+      </li>
+            <li class="kefu-con">
+      <dl>
+      	<dt>联系我们</dt>
+        <dd>
+        <i class="icon-tel"></i>
+        <div><strong>400-6878-909</strong>
+         <p>08:30-19:30(周一至周日)</p>
+         </div>
+          </dd>
+          <dd>
+          <i class="icon-chat"></i>
+          <div>
+          <strong>在线客服</strong>
+           <p>E-mail：hnhy_ggrsc@163.com</p>
+           </div>
+        </dd>
+       </dl>
+      </li>
+      <li class="box-qr">
+        <dl>
+          <dt>关注我们<a title="关注广告人商城微信公众号" class="weixin">
+                        <span class="weixin-qr"></span>
+                    </a>
+                    <a title="关注广告人商城官方微博" target="_blank" class="weibo" href="http://weibo.com/ggrsc">
+                        <span class="weibo-qr"></span>
+                    </a>
+          </dt>
+                    <dd>
+            <p><img src="http://img.ggrsc.com/common/mb_app.png" ></p>
+            <p>下载APP手机端</p>
+          </dd>
+                              <dd>
+            <p><img src="http://img.ggrsc.com/mobile/05327182419357381.jpg" ></p>
+            <p>关注微信公众号</p>
+          </dd>
+                  </dl>
+      </li>
+    </ul>
+      </div>
+</div>
+<div id="footer">
+  <p><a href="http://www.ggrsc.com">首页</a>
+                                                                        | <a  href="/member/article-23.html">联系我们</a>
+                | <a  href="/member/article-22.html">关于我们</a>
+                | <a  target="_blank" href="/category.html">全部商品分类</a>
+                | <a  target="_blank" href="/index.php?act=show_joinin&amp;op=index">入驻平台</a>
+                      </p>
+  Copyright® 2015 - 2018 <a href="http://www.ggrsc.com" target="_blank">广告人商城</a> All rights reserved. 河南黄页广告有限公司<br />
+ <a href="http://www.ggrsc.com" target="_blank">www.ggrsc.com</a>  
+<script src="https://s95.cnzz.com/z_stat.php?id=1256994392&web_id=1256994392" language="JavaScript"></script>  <a href="http://www.miibeian.gov.cn/" target="_blank">豫ICP备11005925号</a></div>
+<div id="task"></div>
+<script type="text/javascript">
+//计划触发
+document.getElementById('task').innerHTML='<iframe src="http://www.ggrsc.com/crontab/cj_index.php?act=task&run=js" width="0" height="0" frameborder="0" style="display:none;"></iframe>';
+</script>
+<script type="text/javascript" src="http://www.ggrsc.com/data/resource/js/jquery.cookie.js"></script>
+<link href="http://www.ggrsc.com/data/resource/js/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://www.ggrsc.com/data/resource/js/perfect-scrollbar.min.js"></script> 
+<script type="text/javascript" src="http://www.ggrsc.com/data/resource/js/qtip/jquery.qtip.min.js"></script>
+<link href="http://www.ggrsc.com/data/resource/js/qtip/jquery.qtip.min.css" rel="stylesheet" type="text/css">
+<!-- 对比 --> 
+<script src="http://www.ggrsc.com/resource/js/compare.js"></script> 
+<script type="text/javascript">
+$(function(){
+	// Membership card
+	$('[nctype="mcard"]').membershipCard({type:'shop'});
+});
+</script></body>
+</html>

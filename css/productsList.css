@@ -1,0 +1,191 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+.container .main {
+  width: 1200px;
+  margin: 0 auto;
+  background: pink;
+}
+.container .main .left {
+  width: 980px;
+  float: left;
+}
+.container .main .left .name {
+  line-height: 50px;
+}
+.container .main .left .title-check {
+  width: 980px;
+  height: 40px;
+  border: solid 1px #D7D7D7;
+  background: #f7f7f7;
+}
+.container .main .left .products-list-show .list-pic {
+  display: block;
+  width: 1000px;
+  margin-left: -11px;
+}
+.container .main .left .products-list-show .list-pic li {
+  font-size: 12px;
+  vertical-align: middle;
+  letter-spacing: normal;
+  display: inline-block;
+  width: 238px;
+  height: 410px;
+  margin: 12px 0 0 8px;
+  border: 1px solid #fff;
+}
+.container .main .left .products-list-show .list-pic .goods-content {
+  line-height: 18px;
+  background-color: #fff;
+  width: 230px;
+  height: 405px;
+  margin: 3px;
+  border: solid 1px #F0F0F0;
+  border-radius: 2px;
+  position: relative;
+  z-index: 11;
+  box-shadow: 0 0 3px rgba(153, 153, 153, 0.1);
+  transition: border-color 0.4s ease-in-out 0s;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-pic {
+  background: #FFF;
+  width: 220px;
+  height: 220px;
+  padding: 5px 5px 0 5px;
+  margin: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-pic a {
+  line-height: 0;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-pic a img {
+  width: 220px;
+  height: 220px;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info {
+  width: 230px;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 180px;
+  background: #fff;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .goods-pic-small {
+  background: rgba(255, 255, 255, 0.9);
+  width: 210px;
+  height: 38px;
+  padding: 5px 10px;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .goods-pic-small ul {
+  width: 180px;
+  height: 30px;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .goods-pic-small ul li {
+  vertical-align: middle;
+  letter-spacing: normal;
+  word-spacing: normal;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0 0px 0 0;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .goods-pic-small ul li img {
+  vertical-align: middle;
+  width: 28px;
+  height: 28px;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .goods-pic-small ul .selected {
+  border: 2px solid red;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .goods-name a {
+  color: #333;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .goods-name a em {
+  color: #f30;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .goods-price {
+  font: 12px/20px Arial;
+  color: #C00;
+  background-color: #FFF;
+  white-space: nowrap;
+  display: block;
+  height: 20px;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .goods-price .sale-price {
+  font-size: 16px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 74px;
+  float: left;
+  overflow: hidden;
+  font-style: normal;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .goods-price .mark-price {
+  color: #999;
+  text-decoration: line-through;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 56px;
+  float: left;
+  margin-left: 10px;
+  overflow: hidden;
+  font-style: normal;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .else-xinxi {
+  height: 77px;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .store {
+  background-color: #F5F5F5;
+  display: block;
+  clear: both;
+  height: 34px;
+  padding: 6px 4px;
+  border-top: solid 1px #EEE;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .store .na {
+  float: left;
+  width: 130px;
+  line-height: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .store .na a {
+  color: #333;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .store .add-cart {
+  float: right;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .store .add-cart a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #D93600;
+  text-align: center;
+  display: block;
+  height: 20px;
+}
+.container .main .left .products-list-show .list-pic .goods-content .goods-info .store .add-cart a i {
+  display: inline-block;
+  width: 13px;
+  height: 14px;
+}
+.container .main .left .products-list-show .list-pic .product-item-show {
+  overflow: hidden;
+  box-shadow: 0px 5px 5px #888888;
+  border-color: red !important;
+}
+
+/*# sourceMappingURL=productsList.css.map */

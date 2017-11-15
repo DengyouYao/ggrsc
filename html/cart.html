@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="icon" href="img/icon/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="../img/icon/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/index.css"/> -->
+</head>
+<body>
+	<div class="header"></div>
+	<header id="header" class="ncc-head-layout">
+		<div class="site-logo">
+			<h1><a href="../index.html">福昂高</a></h1>
+		</div>
+		<ul class="ncc-flow">
+			<li></li>
+		</ul>
+	</header><!-- /header -->
+	<div class="ncc-title">
+		<h3>我的购物车</h3>
+		<h5>查看购物车清单，增加减少商品数量，并勾选想要的商品进入下一操作</h5>
+	</div>
+
+	<div class="cart-list">
+		<div class="cart-title">			 	
+			<label><input type="checkbox" name="" class="check-all">全选</label>
+			<span>图片</span>
+			<span>商品</span>
+			<span>单价(元)</span>
+			<span>数量</span>
+			<span>小计(元)</span>
+			<span>操作</span>
+		</div>
+		<p style="line-height: 50px;margin-left: 10px;">店铺：<i style="font-style: normal;">天采物料</i></p>
+		<div class="cart-products-list">
+			
+		</div>
+		<div class="sum-price">
+			<div class="all-count">商品总价(不含运费)<em id="cartTotal">0.00</em>元</div>
+			<a href="querendingdan.html" class="submit-bth">确认订单</a>
+		</div> 
+	</div>
+
+	<div class="link"></div>
+	<div class="footer"></div>
+
+	<script type="text/html" id="cart_products">
+		{{each products as prod i}}			
+			<div class="row">
+				<div><input type="checkbox" name="" value="" class="ck-prod" checked="checked"></div>
+				<div style="display: none;" class="id">{{prod.id}}</div>
+				<div><img src="{{prod.img}}" alt=""></div>
+				<div><p>{{prod.title}}</p><p>规格：顶顶顶, 类型：hhh哈哈哈</p></div>
+				<div class="price">{{prod.newprice}}</div>
+				<div><span class="minus">-</span><input type="text" name="" value="{{prod.amount}}" class="amount"><span class="add">+</span></div>
+				<div class="sub">{{(prod.newprice*prod.amount).toFixed(2)}}</div>
+				<div><a href="javascript:void(0);">移入收藏夹</a><a href="javascript:void(0);" class="del">删除</a></div> 
+			</div>
+		{{/each}}
+	</script>
+	
+	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="../lib/jquery_plugins/jquery.timers-1.2.js"></script>
+	<script src="../lib/jquery_plugins/jquery.cookie.js"></script>
+	<script src="../lib/arttemplate/template.js"></script>
+	<script src="../js/cart.js"></script>
+</body>
+</html>

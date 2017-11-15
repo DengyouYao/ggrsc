@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>广告人商城——注册</title>
+		<link rel="icon" href="../img/icon/favicon.ico" type="image/x-icon" />
+    	<link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon" />
+    	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+    	<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+	</head>
+	<body>
+		<div class="register-header">			
+			<div class="main">
+				<h2><a href="../index.html">广告人商城</a></h2>
+				<p>我已注册，现在就<a href="login.html">登录</a></p>
+			</div>							
+		</div>
+		<div class="register-container">
+			<div class="main">
+				<div class="left">
+					<ul class="tab-nav">
+						<li class="tabclick"><a href="">账户注册<i></i></a></li>
+						<li class=""><a href="">手机注册<i></i></a></li>
+					</ul>
+					<div class="tab-content">
+						<form action="" method="post">
+							<dl>
+								<dt>用户名：</dt>
+								<dd><input type="text"  name="username" id="username" placeholder="请使用3-20个中、英文、数字及“-”符号" /><span>用户名必须在3-20个字符之间</span></dd>
+							</dl>
+							<dl>
+								<dt>设置密码：</dt>
+								<dd><input type="text" name="password" id="password" value="" placeholder="6-20个中、英文、数字或符号" /><span>密码长度应在6-20个字符之间</span></dd>
+							</dl>
+							<dl>
+								<dt>确认密码：</dt>
+								<dd><input type="text" name="repassword" id="repassword" value="" placeholder="请再次输入密码 "/><span>两次输入的密码不一致</span></dd>
+							</dl>
+							<dl>
+								<dt>邮箱：</dt>
+								<dd><input type="text" name="email" id="email" value="" placeholder="输入常用邮箱作为验证及找回密码使用" /><span>这不是一个有效的电子邮箱</span></dd>
+							</dl>
+							<div class="code">
+								<dl>
+									<dt>验证码：</dt>
+									<dd><input type="text" name="" id="inputcode" value="" placeholder="输入验证码"/></dd>
+								</dl>
+								<div class="show-code">
+									<span><img src="" alt="" class="gen_code"></span>
+									<a href="javascript:void(0)" class="makecode"><span>看不清，换一张</span></a>
+								</div>								
+							</div>
+							<div class="check">
+								<label><input type="checkbox" name="" id="" value="" checked="checked"/> 阅读并同意<a href="#"><<服务条款>></a></label>					
+							</div>
+							<input type="button" value="立即注册" class="btnregister"/>
+						</form>
+					</div>
+				</div>
+				<div class="right">
+					<div class="api-login">
+						<h4>使用合作网站账号直接登录</h4>
+						<a href="" title="QQ登录"><i></i></a>
+						<a href="" title="微博登录"><i></i></a>
+						<a href="" title="微信登录"><i></i></a>
+					</div>
+					<div class="reister-after">
+						<h4>加入我们，你可以获得以下优势</h4>
+						<ul>
+							<li><i></i>厂家-商城-用户去掉中间环节，价格最优惠</li>
+							<li><i></i>包含几乎全部广告类产品，优质材料一目了然</li>
+							<li><i></i>商城入驻商家均严格认证品，质有保障</li>
+							<li><i></i>货比三家，快速找到性价比最高的产品</li>
+							<li><i></i>专线物流配送上门，降低采购成本，省时省力</li>
+							<li><i></i>24小时客服在线服务，售前售后放心无忧</li>
+							<li><i></i>为每一笔交易进行担保，交易安全无风险</li>
+							<li><i></i>商城采购获积分，积分直接可以当钱花</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			
+		</div>
+		<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+		<script src="../js/register.js"></script>
+	</body>
+</html>

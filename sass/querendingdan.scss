@@ -1,0 +1,214 @@
+.ncc-head-layout{
+	display: block;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    .site-logo{
+    	float: left;
+	    width: 240px;
+	    height: 60px;
+	    margin: 20px 0;
+	    a{
+	    	display: inline-block;
+	    	width: 212px;
+	    	height: 60px;
+	    	text-indent: -999px;
+	    	background: url(../img/icon/05542902226750749.png);
+	    }
+    }
+}
+.ncc-title{
+	width: 1200px;
+	height: 80px;
+	margin: 0 auto;
+    padding: 15px 0;
+    border: solid #F7F7F7;
+    border-width: 1px 0 0;
+    border-bottom: solid 1px #F5F5F5;
+    h3{
+    	font: lighter 24px/30px arial,"microsoft yahei";
+    	color: #555;
+    }
+    h5{
+    	font: 12px/20px arial,"microsoft yahei";
+    	color: #AAA;
+
+    }
+}
+.receipt{
+    width: 1200px;
+    height: 362px;
+    margin: 0 auto;
+    color: #534535;
+    border: dotted 1px #F32613;
+    background: rgba(255,245,204,0.25);
+    padding: 7px 17px;
+    h3{
+        font: 16px/20px arial,"microsoft yahei";
+        color: #333;
+        vertical-align: middle;
+        letter-spacing: normal;
+        word-spacing: normal;
+        display: inline-block;
+        line-height: 35px;
+    }
+    .addr-list{
+        ul{
+            li{
+                line-height: 20px;
+                display: block;
+                min-height: 20px;
+                padding: 5px 0 6px 0;
+                margin-top: -1px;
+                border-top: dotted 1px #E6E6E6; 
+                input{
+                    margin: 0 5px;
+                }
+                a{
+                    color: red;
+                }
+            }
+            .addr-box{
+                dl{
+                    font-size: 0;
+                    line-height: 20px;
+                    clear: both;
+                    padding: 0;
+                    margin: 0;
+                    overflow: hidden;
+                    dt{
+                        font-size: 12px;
+                        line-height: 30px;
+                        vertical-align: top;
+                        letter-spacing: normal;
+                        word-spacing: normal;
+                        text-align: right;
+                        display: inline-block;
+                        width: 15%;
+                        padding: 10px 1% 10px 0;
+                        margin: 0;
+                        .required{
+                            font: 12px/16px Tahoma;
+                            color: #F30;
+                            vertical-align: middle;
+                            margin-right: 4px;
+                        }
+                    }
+                    dd{
+                        font-size: 12px;
+                        vertical-align: top;
+                        letter-spacing: normal;
+                        word-spacing: normal;
+                        display: inline-block;
+                        width: 84%;
+                        padding: 10px 0 10px 0;
+                        .text{
+                            font: 12px/20px Arial;
+                            color: #777;
+                            background-color: #FFF;
+                            vertical-align: top;
+                            display: inline-block;
+                            height: 30px;
+                            padding: 4px;
+                            border: solid 1px #E6E9EE;
+                            outline: 0 none;
+                        }
+                        .w100{
+                            width: 100px !important;
+                        }
+                        .w500{
+                            width: 500px;
+                        }
+                        .w200{
+                            width: 200px;
+                        }
+                        select{
+                            margin-right: 5px;
+                            display: none;
+                            color: #777;
+                            background-color: #FFF;
+                            height: 30px;
+                            vertical-align: middle;
+                            padding: 0 4px;
+                            border: solid 1px #E6E9EE;
+                            text-align: center;
+                        }
+                    }
+                    &:hover{
+                        background: #f4ebd2;
+                    }
+                }
+            }
+        }
+        .hr16{
+            margin: 16px 0 !important;
+            a{
+                font-size: 12px;
+                vertical-align: middle;
+                letter-spacing: normal;
+                word-spacing: normal;
+                display: inline-block;
+                background: #ED5564;
+                height: 28px;
+                padding: 5px 10px;
+                border-radius: 3px;
+                color: #fff;
+                cursor: pointer;
+                text-align: center;
+            }
+        }
+    }
+}
+.qunren-footer{
+    width: 1200px;
+    height: 40px;
+    margin:0 auto;
+    margin-top: 25px;
+    background: #f7f7f7;
+    .back-cart{
+        float: left;
+        .back-bth{
+            font-size: 15px;
+            line-height: 40px;
+            color: #555 !important;
+            vertical-align: top;
+            display: inline-block;
+            height: 40px;
+            padding: 0 15px;
+            background-color: #bbb;
+            cursor: pointer;
+        }
+    }
+    .sum-price{
+        height: 40px;
+        line-height: 40px;
+        float: right;
+
+        .all-count{
+            display: inline-block;
+            text-align: right;
+            em{
+                font-style: normal;
+                font-size: 20px;
+                color: #F32613;
+                margin: 0 4px;
+            }
+        }
+        .submit-bth{
+            font-size: 20px;
+            line-height: 40px;
+            color: #FFF !important;
+            background-color: #AAA;
+            vertical-align: top;
+            display: inline-block;
+            height: 40px;
+            padding: 0 15px;
+            cursor: not-allowed;
+        }
+        .ok{
+            background-color: #F32613;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,209 @@
+.ncc-head-layout {
+  display: block;
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.ncc-head-layout .site-logo {
+  float: left;
+  width: 240px;
+  height: 60px;
+  margin: 20px 0;
+}
+.ncc-head-layout .site-logo a {
+  display: inline-block;
+  width: 212px;
+  height: 60px;
+  text-indent: -999px;
+  background: url(../img/icon/05542902226750749.png);
+}
+
+.ncc-title {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 15px 0;
+  border: solid #F7F7F7;
+  border-width: 1px 0 0;
+  border-bottom: solid 1px #F5F5F5;
+}
+.ncc-title h3 {
+  font: lighter 24px/30px arial,"microsoft yahei";
+  color: #555;
+}
+.ncc-title h5 {
+  font: 12px/20px arial,"microsoft yahei";
+  color: #AAA;
+}
+
+.cart-list {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+.cart-list .cart-title {
+  color: #666;
+  height: 40px;
+  margin-bottom: 10px;
+  background: #FAFAFA;
+}
+.cart-list .cart-title label {
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  line-height: 40px;
+  text-align: center;
+}
+.cart-list .cart-title label input {
+  margin-right: 5px;
+}
+.cart-list .cart-title span {
+  display: inline-block;
+  text-align: center;
+}
+.cart-list .cart-title span:nth-child(2) {
+  width: 120px;
+}
+.cart-list .cart-title span:nth-child(3) {
+  width: 450px;
+}
+.cart-list .cart-title span:nth-child(4) {
+  width: 170px;
+}
+.cart-list .cart-title span:nth-child(5) {
+  width: 120px;
+}
+.cart-list .cart-title span:nth-child(6) {
+  width: 145px;
+}
+.cart-list .cart-title span:nth-child(7) {
+  width: 100px;
+}
+.cart-list .row {
+  border: 1px solid #999;
+  height: 100px;
+  display: block;
+  margin-top: -1px;
+}
+.cart-list .row div {
+  float: left;
+}
+.cart-list .row div:nth-child(1) {
+  width: 70px;
+  text-align: center;
+  line-height: 98px;
+}
+.cart-list .row div:nth-child(3) {
+  width: 120px;
+  line-height: 98px;
+  text-align: center;
+}
+.cart-list .row div:nth-child(3) img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.cart-list .row div:nth-child(4) {
+  width: 450px;
+  padding: 27px 10px 20px 10px;
+  font-size: 12px;
+}
+.cart-list .row div:nth-child(4) p {
+  line-height: 22px;
+  height: 22px;
+  overflow: hidden;
+}
+.cart-list .row div:nth-child(4) p:nth-child(2) {
+  color: #999;
+}
+.cart-list .row div:nth-child(5) {
+  width: 186px;
+  text-align: center;
+  line-height: 98px;
+  color: black;
+  font-weight: 600;
+}
+.cart-list .row div:nth-child(6) {
+  width: 120px;
+  line-height: 98px;
+  text-align: center;
+}
+.cart-list .row div:nth-child(6) .amount {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: solid 1px #E6E9EE;
+}
+.cart-list .row div:nth-child(6) span {
+  font: 14px/30px Tahoma, Arial;
+  display: inline-block;
+  width: 26px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+.cart-list .row div:nth-child(6) span:hover {
+  background: #c81623;
+  opacity: 0.6;
+  color: white;
+}
+.cart-list .row div:nth-child(7) {
+  width: 145px;
+  line-height: 98px;
+  text-align: center;
+  font-weight: 600;
+  color: red;
+}
+.cart-list .row div:nth-child(8) {
+  width: 100px;
+  padding: 27px 10px 20px 10px;
+  text-align: center;
+}
+.cart-list .row div:nth-child(8) a {
+  line-height: 22px;
+  display: block;
+  color: black;
+}
+.cart-list .row div:nth-child(8) a:hover {
+  color: red;
+}
+.cart-list .sum-price {
+  width: 1200px;
+  height: 40px;
+  margin-top: 25px;
+  line-height: 40px;
+  text-align: right;
+}
+.cart-list .sum-price .all-count {
+  display: inline-block;
+  text-align: right;
+}
+.cart-list .sum-price .all-count em {
+  font-style: normal;
+  font-size: 20px;
+  color: #F32613;
+  margin: 0 4px;
+}
+.cart-list .sum-price .submit-bth {
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFF !important;
+  background-color: #AAA;
+  vertical-align: top;
+  display: inline-block;
+  height: 40px;
+  padding: 0 15px;
+  cursor: not-allowed;
+}
+.cart-list .sum-price .ok {
+  background-color: #F32613;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=cart.css.map */

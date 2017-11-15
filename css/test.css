@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box-list-item {
+  width: 945px;
+  padding: 10px;
+  position: absolute;
+}
+.box-list-item .title {
+  margin-bottom: 20px;
+}
+.box-list-item .title a {
+  display: inline-block;
+  padding: 5px;
+  background: #666;
+  margin-right: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.box-list-item .list-fenlei {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 150px;
+  overflow: hidden;
+}
+.box-list-item .list-fenlei .list-title {
+  float: left;
+  position: absolute;
+  top: 0px;
+  right: 810px;
+  color: #666;
+}
+.box-list-item .list-fenlei .list-title h5 {
+  margin-right: 8px;
+  display: inline-block;
+}
+.box-list-item .list-fenlei .list-title h5 a {
+  color: #111;
+}
+.box-list-item .list-fenlei .list-name {
+  float: left;
+  font-size: 12px;
+  color: #444;
+  border-bottom: 1px solid #ccc;
+}
+.box-list-item .list-fenlei .list-name a {
+  font-size: 12px;
+  color: #7C7171;
+  line-height: 14px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  display: inline-block;
+  height: 14px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border-left: solid 1px #E7E7E7;
+}
+
+/*# sourceMappingURL=test.css.map */
